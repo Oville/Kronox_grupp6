@@ -1,13 +1,13 @@
 import java.util.Calendar;
 
+
 	import javax.swing.JOptionPane;
 	
 public class ClockKronox {
 	
 
 		private ClockKronox digitalKronoxGUI;
-		private int alarmHour;
-		private int alarmMinute;
+	
 		private  KronoxGUI digKronoxGUI;
 
 		
