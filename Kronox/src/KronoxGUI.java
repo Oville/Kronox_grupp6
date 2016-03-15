@@ -56,8 +56,8 @@ public class KronoxGUI extends JFrame {
 		contentPane.setLayout(null);
 		
 		labelTime = new JLabel("");
-		labelTime.setFont(new Font("Futura", Font.PLAIN, 30));
-		labelTime.setBounds(373, 75, 167, 74);
+		labelTime.setFont(new Font("Futura", Font.PLAIN, 50));
+		labelTime.setBounds(358, 75, 182, 74);
 		contentPane.add(labelTime);
 		
 		JLabel lblProgramcourse = new JLabel("PROGRAM/COURSE");
@@ -94,18 +94,18 @@ public class KronoxGUI extends JFrame {
 		contentPane.add(textArea);
 		
 		JLabel lblNiagara = new JLabel("NIAGARA");
-		lblNiagara.setFont(new Font("Futura", Font.PLAIN, 55));
+		lblNiagara.setFont(new Font("Futura", Font.PLAIN, 50));
 		lblNiagara.setBounds(117, 16, 275, 60);
 		contentPane.add(lblNiagara);
 		
 		JLabel lblSchedule = new JLabel("SCHEDULE");
-		lblSchedule.setFont(new Font("Futura", Font.PLAIN, 40));
+		lblSchedule.setFont(new Font("Futura", Font.PLAIN, 35));
 		lblSchedule.setBounds(117, 71, 207, 49);
 		contentPane.add(lblSchedule);
 		
 		labelDate = new JLabel("");
 		labelDate.setFont(new Font("Futura", Font.PLAIN, 16));
-		labelDate.setBounds(435, 51, 99, 18);
+		labelDate.setBounds(408, 58, 126, 18);
 		contentPane.add(labelDate);
 		
 		JLabel label_1 = new JLabel("");
