@@ -3,24 +3,24 @@ import java.util.Calendar;
 
 import javax.swing.JOptionPane;
 
+public class ClockLogic {
 
-public class ClockKronox {
-
-	private ClockKronox kronoxGUI;
+	private ClockLogic digitalClockGUI;
 	
-	private  KronoxGUI digKronoxGUI;
+	private  DigitalClockGUI digClockGUI;
 
 	
-	public ClockKronox (KronoxGUI kronoxGUI){
-		this.digKronoxGUI = kronoxGUI;
+	public ClockLogic (DigitalClockGUI digitalClockGUI){
+		this.digClockGUI = digitalClockGUI;
 		ClockThread clockTread = new ClockThread();
 		clockTread.start();
 		
 	}
 	
-	
-		
 
+		
+	
+	
 
 	
 	public static String addZero(int i){
@@ -44,10 +44,9 @@ public class ClockKronox {
 				int month = c.get(Calendar.MONTH);
 				int year = c.get(Calendar.YEAR);
 				
-				digKronoxGUI.setDateOnLabel(addZero(day) + " / "+ addZero(month + 1) + " - " + addZero(year));
-			
+				digClockGUI.setDateOnLabel(addZero(day) + " : "+ addZero(month + 1) + " : " + addZero(year));
 
-				digKronoxGUI.setTimeOnLabel(addZero(hour) + " : "+ addZero(min) );
+				digClockGUI.setTimeOnLabel(addZero(hour) + " : "+ addZero(min) + " : " + addZero(second));
 				
 				
 			

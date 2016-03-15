@@ -1,4 +1,2 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">
-<refactoring comment="Delete resource &apos;KronoxClock&apos;" deleteContents="false" description="Delete resource &apos;KronoxClock&apos;" element1="/KronoxClock" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1457962934454"/>
-</session>
+<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;KronoxClock&apos;" deleteContents="false" description="Delete resource &apos;KronoxClock&apos;" element1="/KronoxClock" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1457962934454"/>&#x0A;&#x0A;</session>

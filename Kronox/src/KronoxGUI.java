@@ -16,12 +16,16 @@ public class KronoxGUI extends JFrame {
 
 	private JPanel contentPane;
 	private JLabel labelTime;
+	private JLabel labelDate;
 	private ClockKronox clockKronox;
 
 	public void setTimeOnLabel(String time){
 		labelTime.setText(time);
 	}
-
+	public void setDateOnLabel(String date){
+		labelDate.setText(date);
+		
+	}
 
 	/**
 	 * Launch the application.
@@ -50,6 +54,11 @@ public class KronoxGUI extends JFrame {
 		contentPane.setBorder(new EmptyBorder(5, 5, 5, 5));
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
+		
+		labelTime = new JLabel("");
+		labelTime.setFont(new Font("Futura", Font.PLAIN, 30));
+		labelTime.setBounds(373, 75, 167, 74);
+		contentPane.add(labelTime);
 		
 		JLabel lblProgramcourse = new JLabel("PROGRAM/COURSE");
 		lblProgramcourse.setFont(new Font("Futura", Font.PLAIN, 14));
@@ -94,20 +103,20 @@ public class KronoxGUI extends JFrame {
 		lblSchedule.setBounds(117, 71, 207, 49);
 		contentPane.add(lblSchedule);
 		
-		JLabel label = new JLabel("14-03-2016");
-		label.setFont(new Font("Futura", Font.PLAIN, 16));
-		label.setBounds(435, 63, 99, 18);
-		contentPane.add(label);
-		
-		JLabel labelTime = new JLabel("");
-		labelTime.setFont(new Font("Futura", Font.PLAIN, 55));
-		labelTime.setBounds(373, 75, 167, 74);
-		contentPane.add(labelTime);
+		labelDate = new JLabel("");
+		labelDate.setFont(new Font("Futura", Font.PLAIN, 16));
+		labelDate.setBounds(435, 51, 99, 18);
+		contentPane.add(labelDate);
 		
 		JLabel label_1 = new JLabel("");
 		label_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
 		label_1.setBounds(20, 6, 85, 124);
 		contentPane.add(label_1);
+		
+		JTextArea textArea_1 = new JTextArea();
+		textArea_1.setBackground(new Color(255, 228, 225));
+		textArea_1.setBounds(0, 281, 540, 49);
+		contentPane.add(textArea_1);
 		
 		clockKronox = new ClockKronox(this);
 	}
