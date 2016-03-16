@@ -15,15 +15,15 @@ import javax.swing.ImageIcon;
 public class KronoxGUI extends JFrame {
 
 	private JPanel contentPane;
-	private JLabel labelTime;
-	private JLabel labelDate;
+	private JLabel timeLable;
+	private JLabel dateLable;
 	private ClockKronox clockKronox;
 
 	public void setTimeOnLabel(String time){
-		labelTime.setText(time);
+		timeLable.setText(time);
 	}
 	public void setDateOnLabel(String date){
-		labelDate.setText(date);
+		dateLable.setText(date);
 		
 	}
 
@@ -55,63 +55,126 @@ public class KronoxGUI extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
-		JLabel label_1 = new JLabel("");
-		label_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
-		label_1.setBounds(20, 6, 85, 124);
-		contentPane.add(label_1);
+		timeLable = new JLabel("");
+		timeLable.setFont(new Font("Futura", Font.PLAIN, 55));
+		timeLable.setBounds(343, 75, 197, 74);
+		contentPane.add(timeLable);
 		
-		labelTime = new JLabel("");
-		labelTime.setFont(new Font("Futura", Font.PLAIN, 55));
-		labelTime.setBounds(343, 75, 197, 74);
-		contentPane.add(labelTime);
+		JLabel programLable = new JLabel("PROGRAM/COURSE");
+		programLable.setFont(new Font("Futura", Font.PLAIN, 14));
+		programLable.setForeground(Color.WHITE);
+		programLable.setBackground(Color.BLACK);
+		programLable.setBounds(138, 161, 154, 49);
+		contentPane.add(programLable);
 		
-		JLabel lblProgramcourse = new JLabel("PROGRAM/COURSE");
-		lblProgramcourse.setFont(new Font("Futura", Font.PLAIN, 14));
-		lblProgramcourse.setForeground(Color.WHITE);
-		lblProgramcourse.setBackground(Color.BLACK);
-		lblProgramcourse.setBounds(138, 161, 377, 49);
-		contentPane.add(lblProgramcourse);
+		JLabel roomLable = new JLabel("ROOM");
+		roomLable.setFont(new Font("Futura", Font.PLAIN, 14));
+		roomLable.setForeground(Color.WHITE);
+		roomLable.setBackground(Color.BLACK);
+		roomLable.setBounds(315, 161, 61, 49);
+		contentPane.add(roomLable);
 		
-		JLabel lblRoom = new JLabel("ROOM");
-		lblRoom.setFont(new Font("Futura", Font.PLAIN, 14));
-		lblRoom.setForeground(Color.WHITE);
-		lblRoom.setBackground(Color.BLACK);
-		lblRoom.setBounds(315, 161, 61, 49);
-		contentPane.add(lblRoom);
+		JLabel startEndLable = new JLabel("START/END");
+		startEndLable.setFont(new Font("Futura", Font.PLAIN, 14));
+		startEndLable.setForeground(Color.WHITE);
+		startEndLable.setBackground(Color.BLACK);
+		startEndLable.setBounds(20, 161, 85, 49);
+		contentPane.add(startEndLable);
 		
-		JLabel lblNewLabel = new JLabel("START/END");
-		lblNewLabel.setFont(new Font("Futura", Font.PLAIN, 14));
-		lblNewLabel.setForeground(Color.WHITE);
-		lblNewLabel.setBackground(Color.BLACK);
-		lblNewLabel.setBounds(20, 161, 85, 49);
-		contentPane.add(lblNewLabel);
+		JLabel infoLable = new JLabel("INFO");
+		infoLable.setFont(new Font("Futura", Font.PLAIN, 14));
+		infoLable.setForeground(Color.WHITE);
+		infoLable.setBackground(Color.BLACK);
+		infoLable.setBounds(435, 161, 55, 49);
+		contentPane.add(infoLable);
 		
-		JLabel lblInfo = new JLabel("INFO");
-		lblInfo.setFont(new Font("Futura", Font.PLAIN, 14));
-		lblInfo.setForeground(Color.WHITE);
-		lblInfo.setBackground(Color.BLACK);
-		lblInfo.setBounds(435, 161, 55, 49);
-		contentPane.add(lblInfo);
+		JTextArea textArea_black = new JTextArea();
+		textArea_black.setBackground(Color.BLACK);
+		textArea_black.setBounds(0, 161, 540, 49);
+		contentPane.add(textArea_black);
 		
-		JTextArea textArea = new JTextArea();
-		textArea.setBackground(Color.BLACK);
-		textArea.setBounds(0, 161, 540, 49);
-		contentPane.add(textArea);
+		JLabel niagaraLable = new JLabel("NIAGARA");
+		niagaraLable.setFont(new Font("Futura", Font.PLAIN, 50));
+		niagaraLable.setBounds(117, 16, 275, 60);
+		contentPane.add(niagaraLable);
 		
-		JLabel lblNiagara = new JLabel("NIAGARA");
-		lblNiagara.setFont(new Font("Futura", Font.PLAIN, 50));
-		lblNiagara.setBounds(117, 16, 275, 60);
-		contentPane.add(lblNiagara);
+		JLabel scheduleLable = new JLabel("SCHEDULE");
+		scheduleLable.setFont(new Font("Futura", Font.PLAIN, 35));
+		scheduleLable.setBounds(117, 71, 207, 49);
+		contentPane.add(scheduleLable);
 		
-		JLabel lblSchedule = new JLabel("SCHEDULE");
-		lblSchedule.setFont(new Font("Futura", Font.PLAIN, 35));
-		lblSchedule.setBounds(117, 71, 207, 49);
-		contentPane.add(lblSchedule);
+		dateLable = new JLabel("");
+		dateLable.setFont(new Font("Futura", Font.PLAIN, 16));
+		dateLable.setBounds(408, 58, 126, 18);
+		contentPane.add(dateLable);
 		
-		labelDate = new JLabel("");
-		labelDate.setFont(new Font("Futura", Font.PLAIN, 16));
-		labelDate.setBounds(408, 58, 126, 18);
-		contentPane.add(labelDate);
+		JLabel startEnd1 = new JLabel("startEnd1");
+		startEnd1.setBounds(10, 222, 95, 16);
+		contentPane.add(startEnd1);
+		
+		JLabel startEnd14 = new JLabel("startEnd14");
+		startEnd14.setBounds(6, 633, 78, 16);
+		contentPane.add(startEnd14);
+		
+		JLabel startEnd16 = new JLabel("startEnd16");
+		startEnd16.setBounds(6, 695, 74, 16);
+		contentPane.add(startEnd16);
+		
+		JLabel startEnd10 = new JLabel("startEnd10");
+		startEnd10.setBounds(6, 503, 68, 16);
+		contentPane.add(startEnd10);
+		
+		JLabel startEnd13 = new JLabel("startEnd13");
+		startEnd13.setBounds(10, 601, 68, 16);
+		contentPane.add(startEnd13);
+		
+		JLabel startEnd2 = new JLabel("startEnd2");
+		startEnd2.setBounds(9, 251, 61, 16);
+		contentPane.add(startEnd2);
+		
+		JLabel startEnd17 = new JLabel("startEnd17");
+		startEnd17.setBounds(6, 726, 78, 16);
+		contentPane.add(startEnd17);
+		
+		JLabel startEnd3 = new JLabel("startEnd3");
+		startEnd3.setBounds(4, 281, 61, 16);
+		contentPane.add(startEnd3);
+		
+		JLabel startEnd15 = new JLabel("startEnd15");
+		startEnd15.setBounds(10, 657, 78, 16);
+		contentPane.add(startEnd15);
+		
+		JLabel startEnd12 = new JLabel("startEnd12");
+		startEnd12.setBounds(6, 569, 77, 16);
+		contentPane.add(startEnd12);
+		
+		JLabel startEnd11 = new JLabel("startEnd11");
+		startEnd11.setBounds(10, 530, 68, 16);
+		contentPane.add(startEnd11);
+		
+		JLabel startEnd4 = new JLabel("startEnd4");
+		startEnd4.setBounds(6, 319, 61, 16);
+		contentPane.add(startEnd4);
+		
+		JLabel startEnd9 = new JLabel("startEnd9");
+		startEnd9.setBounds(6, 475, 61, 16);
+		contentPane.add(startEnd9);
+		
+		JLabel startEnd8 = new JLabel("startEnd8");
+		startEnd8.setBounds(6, 436, 61, 16);
+		contentPane.add(startEnd8);
+		
+		JLabel startEnd7 = new JLabel("startEnd7");
+		startEnd7.setBounds(10, 414, 61, 16);
+		contentPane.add(startEnd7);
+		
+		JLabel startEnd5 = new JLabel("startEnd5");
+		startEnd5.setBounds(10, 343, 61, 16);
+		contentPane.add(startEnd5);
+		
+		JLabel startEnd6 = new JLabel("startEnd6");
+		startEnd6.setBounds(6, 378, 61, 16);
+		contentPane.add(startEnd6);
 		
 		JTextArea textArea_1 = new JTextArea();
 		textArea_1.setBackground(new Color(255, 228, 225));
@@ -152,41 +215,6 @@ public class KronoxGUI extends JFrame {
 		textArea_8.setBackground(new Color(255, 228, 225));
 		textArea_8.setBounds(0, 685, 540, 31);
 		contentPane.add(textArea_8);
-		
-		JLabel lblMaskinOchMaterialteknik = new JLabel("Maskin- och materialteknik:\n\n");
-		lblMaskinOchMaterialteknik.setFont(new Font("Futura", Font.PLAIN, 12));
-		lblMaskinOchMaterialteknik.setBounds(127, 212, 166, 23);
-		contentPane.add(lblMaskinOchMaterialteknik);
-		
-		JLabel label_2 = new JLabel("10:15 - 12:00");
-		label_2.setFont(new Font("Futura", Font.PLAIN, 13));
-		label_2.setBounds(10, 220, 109, 16);
-		contentPane.add(label_2);
-		
-		JLabel lblA = new JLabel("A0407\n");
-		lblA.setFont(new Font("Futura", Font.PLAIN, 13));
-		lblA.setBounds(315, 221, 55, 16);
-		contentPane.add(lblA);
-		
-		JLabel label_4 = new JLabel("");
-		label_4.setFont(new Font("Futura", Font.PLAIN, 13));
-		label_4.setBounds(408, 219, 109, 16);
-		contentPane.add(label_4);
-		
-		JLabel lblNewLabel_1 = new JLabel("  Företag och företagande");
-		lblNewLabel_1.setFont(new Font("Futura", Font.PLAIN, 12));
-		lblNewLabel_1.setBounds(125, 227, 168, 16);
-		contentPane.add(lblNewLabel_1);
-		
-		JLabel lblNewLabel_2 = new JLabel("Språket i Affärsplanen");
-		lblNewLabel_2.setFont(new Font("Futura", Font.PLAIN, 13));
-		lblNewLabel_2.setBounds(394, 222, 146, 16);
-		contentPane.add(lblNewLabel_2);
-		
-		JLabel label = new JLabel("10:15 - 12:00");
-		label.setFont(new Font("Futura", Font.PLAIN, 13));
-		label.setBounds(0, 258, 109, 16);
-		contentPane.add(label);
 		
 		clockKronox = new ClockKronox(this);
 	}
