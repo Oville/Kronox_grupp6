@@ -56,8 +56,8 @@ public class KronoxGUI extends JFrame {
 		contentPane.setLayout(null);
 		
 		labelTime = new JLabel("");
-		labelTime.setFont(new Font("Futura", Font.PLAIN, 50));
-		labelTime.setBounds(358, 75, 182, 74);
+		labelTime.setFont(new Font("Futura", Font.PLAIN, 55));
+		labelTime.setBounds(343, 75, 197, 74);
 		contentPane.add(labelTime);
 		
 		JLabel lblProgramcourse = new JLabel("PROGRAM/COURSE");
@@ -115,8 +115,28 @@ public class KronoxGUI extends JFrame {
 		
 		JTextArea textArea_1 = new JTextArea();
 		textArea_1.setBackground(new Color(255, 228, 225));
-		textArea_1.setBounds(0, 281, 540, 49);
+		textArea_1.setBounds(0, 261, 540, 49);
 		contentPane.add(textArea_1);
+		
+		JTextArea textArea_2 = new JTextArea();
+		textArea_2.setBackground(new Color(255, 228, 225));
+		textArea_2.setBounds(0, 363, 540, 49);
+		contentPane.add(textArea_2);
+		
+		JTextArea textArea_3 = new JTextArea();
+		textArea_3.setBackground(new Color(255, 228, 225));
+		textArea_3.setBounds(0, 462, 540, 49);
+		contentPane.add(textArea_3);
+		
+		JTextArea textArea_4 = new JTextArea();
+		textArea_4.setBackground(new Color(255, 228, 225));
+		textArea_4.setBounds(0, 564, 540, 49);
+		contentPane.add(textArea_4);
+		
+		JTextArea textArea_5 = new JTextArea();
+		textArea_5.setBackground(new Color(255, 228, 225));
+		textArea_5.setBounds(0, 665, 540, 49);
+		contentPane.add(textArea_5);
 		
 		clockKronox = new ClockKronox(this);
 	}
