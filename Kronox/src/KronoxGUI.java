@@ -135,6 +135,7 @@ public class KronoxGUI extends JFrame {
 		JLabel startEnd17 = new JLabel("startEnd17");
 		startEnd17.setBounds(6, 726, 78, 16);
 		contentPane.add(startEnd17);
+		//hej
 		
 		JLabel startEnd3 = new JLabel("startEnd3");
 		startEnd3.setBounds(4, 281, 61, 16);
