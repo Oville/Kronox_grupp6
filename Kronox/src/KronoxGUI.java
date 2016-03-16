@@ -55,6 +55,11 @@ public class KronoxGUI extends JFrame {
 		setContentPane(contentPane);
 		contentPane.setLayout(null);
 		
+		JLabel label_1 = new JLabel("");
+		label_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
+		label_1.setBounds(20, 6, 85, 124);
+		contentPane.add(label_1);
+		
 		labelTime = new JLabel("");
 		labelTime.setFont(new Font("Futura", Font.PLAIN, 55));
 		labelTime.setBounds(343, 75, 197, 74);
@@ -64,7 +69,7 @@ public class KronoxGUI extends JFrame {
 		lblProgramcourse.setFont(new Font("Futura", Font.PLAIN, 14));
 		lblProgramcourse.setForeground(Color.WHITE);
 		lblProgramcourse.setBackground(Color.BLACK);
-		lblProgramcourse.setBounds(130, 161, 377, 49);
+		lblProgramcourse.setBounds(138, 161, 377, 49);
 		contentPane.add(lblProgramcourse);
 		
 		JLabel lblRoom = new JLabel("ROOM");
@@ -78,7 +83,7 @@ public class KronoxGUI extends JFrame {
 		lblNewLabel.setFont(new Font("Futura", Font.PLAIN, 14));
 		lblNewLabel.setForeground(Color.WHITE);
 		lblNewLabel.setBackground(Color.BLACK);
-		lblNewLabel.setBounds(6, 161, 85, 49);
+		lblNewLabel.setBounds(20, 161, 85, 49);
 		contentPane.add(lblNewLabel);
 		
 		JLabel lblInfo = new JLabel("INFO");
@@ -90,7 +95,7 @@ public class KronoxGUI extends JFrame {
 		
 		JTextArea textArea = new JTextArea();
 		textArea.setBackground(Color.BLACK);
-		textArea.setBounds(0, 158, 540, 49);
+		textArea.setBounds(0, 161, 540, 49);
 		contentPane.add(textArea);
 		
 		JLabel lblNiagara = new JLabel("NIAGARA");
@@ -108,35 +113,80 @@ public class KronoxGUI extends JFrame {
 		labelDate.setBounds(408, 58, 126, 18);
 		contentPane.add(labelDate);
 		
-		JLabel label_1 = new JLabel("");
-		label_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
-		label_1.setBounds(20, 6, 85, 124);
-		contentPane.add(label_1);
-		
 		JTextArea textArea_1 = new JTextArea();
 		textArea_1.setBackground(new Color(255, 228, 225));
-		textArea_1.setBounds(0, 261, 540, 49);
+		textArea_1.setBounds(0, 247, 540, 31);
 		contentPane.add(textArea_1);
 		
 		JTextArea textArea_2 = new JTextArea();
 		textArea_2.setBackground(new Color(255, 228, 225));
-		textArea_2.setBounds(0, 363, 540, 49);
+		textArea_2.setBounds(0, 309, 540, 31);
 		contentPane.add(textArea_2);
 		
 		JTextArea textArea_3 = new JTextArea();
 		textArea_3.setBackground(new Color(255, 228, 225));
-		textArea_3.setBounds(0, 462, 540, 49);
+		textArea_3.setBounds(0, 371, 540, 31);
 		contentPane.add(textArea_3);
 		
 		JTextArea textArea_4 = new JTextArea();
 		textArea_4.setBackground(new Color(255, 228, 225));
-		textArea_4.setBounds(0, 564, 540, 49);
+		textArea_4.setBounds(0, 433, 540, 31);
 		contentPane.add(textArea_4);
 		
 		JTextArea textArea_5 = new JTextArea();
 		textArea_5.setBackground(new Color(255, 228, 225));
-		textArea_5.setBounds(0, 665, 540, 49);
+		textArea_5.setBounds(0, 493, 540, 31);
 		contentPane.add(textArea_5);
+		
+		JTextArea textArea_6 = new JTextArea();
+		textArea_6.setBackground(new Color(255, 228, 225));
+		textArea_6.setBounds(0, 558, 540, 31);
+		contentPane.add(textArea_6);
+		
+		JTextArea textArea_7 = new JTextArea();
+		textArea_7.setBackground(new Color(255, 228, 225));
+		textArea_7.setBounds(0, 622, 540, 31);
+		contentPane.add(textArea_7);
+		
+		JTextArea textArea_8 = new JTextArea();
+		textArea_8.setBackground(new Color(255, 228, 225));
+		textArea_8.setBounds(0, 685, 540, 31);
+		contentPane.add(textArea_8);
+		
+		JLabel lblMaskinOchMaterialteknik = new JLabel("Maskin- och materialteknik:\n\n");
+		lblMaskinOchMaterialteknik.setFont(new Font("Futura", Font.PLAIN, 12));
+		lblMaskinOchMaterialteknik.setBounds(127, 212, 166, 23);
+		contentPane.add(lblMaskinOchMaterialteknik);
+		
+		JLabel label_2 = new JLabel("10:15 - 12:00");
+		label_2.setFont(new Font("Futura", Font.PLAIN, 13));
+		label_2.setBounds(10, 220, 109, 16);
+		contentPane.add(label_2);
+		
+		JLabel lblA = new JLabel("A0407\n");
+		lblA.setFont(new Font("Futura", Font.PLAIN, 13));
+		lblA.setBounds(315, 221, 55, 16);
+		contentPane.add(lblA);
+		
+		JLabel label_4 = new JLabel("");
+		label_4.setFont(new Font("Futura", Font.PLAIN, 13));
+		label_4.setBounds(408, 219, 109, 16);
+		contentPane.add(label_4);
+		
+		JLabel lblNewLabel_1 = new JLabel("  Företag och företagande");
+		lblNewLabel_1.setFont(new Font("Futura", Font.PLAIN, 12));
+		lblNewLabel_1.setBounds(125, 227, 168, 16);
+		contentPane.add(lblNewLabel_1);
+		
+		JLabel lblNewLabel_2 = new JLabel("Språket i Affärsplanen");
+		lblNewLabel_2.setFont(new Font("Futura", Font.PLAIN, 13));
+		lblNewLabel_2.setBounds(394, 222, 146, 16);
+		contentPane.add(lblNewLabel_2);
+		
+		JLabel label = new JLabel("10:15 - 12:00");
+		label.setFont(new Font("Futura", Font.PLAIN, 13));
+		label.setBounds(0, 258, 109, 16);
+		contentPane.add(label);
 		
 		clockKronox = new ClockKronox(this);
 	}
