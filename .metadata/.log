@@ -8252,3 +8252,1187 @@ Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.
 !ENTRY org.eclipse.core.net 1 0 2016-03-16 13:58:44.719
 !MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
 >>>>>>> origin/master
+
+!ENTRY org.eclipse.ui 4 0 2016-03-17 14:11:12.404
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.swt.SWTException: Widget is disposed
+	at org.eclipse.swt.SWT.error(SWT.java:4491)
+	at org.eclipse.swt.SWT.error(SWT.java:4406)
+	at org.eclipse.swt.SWT.error(SWT.java:4377)
+	at org.eclipse.swt.widgets.Widget.error(Widget.java:799)
+	at org.eclipse.swt.widgets.Widget.checkWidget(Widget.java:588)
+	at org.eclipse.swt.widgets.Control.redraw(Control.java:2779)
+	at org.eclipse.wb.core.controls.CFlatButton$2.handleEvent(CFlatButton.java:110)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4230)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1491)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1514)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1499)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1299)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3698)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2016-03-17 14:13:18.643
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.updateTargetRequestAfter(TreeDropListener.java:176)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.dragOver(TreeDropListener.java:86)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:81)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4230)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1491)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1514)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1499)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1299)
+	at org.eclipse.swt.dnd.DropTarget.draggingUpdated(DropTarget.java:319)
+	at org.eclipse.swt.dnd.DropTarget.dropTargetProc(DropTarget.java:452)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.mouseDownSuper(Widget.java:1121)
+	at org.eclipse.swt.widgets.Tree.mouseDownSuper(Tree.java:2047)
+	at org.eclipse.swt.widgets.Widget.mouseDown(Widget.java:1113)
+	at org.eclipse.swt.widgets.Control.mouseDown(Control.java:2569)
+	at org.eclipse.swt.widgets.Tree.mouseDown(Tree.java:2015)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5692)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2130)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2337)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5756)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5193)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5342)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:128)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2016-03-17 14:16:08.876 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nb_NO
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/johanneradford/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/johanneradford/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-03-17 14:16:10.024
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-03-17 14:16:12.526
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+
+!ENTRY org.eclipse.wb.core 4 4 2016-03-17 14:17:50.972
+!MESSAGE Designer [1.8.0.r45x201506110826.201603171417]: Execution flow problem. {
+  super("Java SlideShow");
+  pic=new JLabel();
+  pic.setBounds(0,30,100,100);
+  tm=new Timer(5000,new ActionListener(){
+    @Override public void actionPerformed(    ActionEvent e){
+      x+=1;
+      if (x >= list.length)       x=0;
+    }
+  }
+);
+  getContentPane().add(pic);
+  tm.start();
+  getContentPane().setLayout(null);
+  setSize(100,100);
+  setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  setBounds(0,0,540,960);
+  contentPane=new JPanel();
+  contentPane.setBackground(Color.WHITE);
+  contentPane.setBorder(new EmptyBorder(5,5,5,5));
+  setContentPane(contentPane);
+  contentPane.setLayout(null);
+  labelTime=new JLabel("");
+  labelTime.setFont(new Font("Futura",Font.PLAIN,55));
+  labelTime.setBounds(321,75,197,74);
+  contentPane.add(labelTime);
+  JLabel lblProgramcourse=new JLabel("PROGRAM/COURSE");
+  lblProgramcourse.setFont(new Font("Futura",Font.PLAIN,14));
+  lblProgramcourse.setForeground(Color.WHITE);
+  lblProgramcourse.setBackground(Color.BLACK);
+  lblProgramcourse.setBounds(130,161,377,49);
+  contentPane.add(lblProgramcourse);
+  JLabel lblRoom=new JLabel("ROOM");
+  lblRoom.setFont(new Font("Futura",Font.PLAIN,14));
+  lblRoom.setForeground(Color.WHITE);
+  lblRoom.setBackground(Color.BLACK);
+  lblRoom.setBounds(315,161,61,49);
+  contentPane.add(lblRoom);
+  JLabel lblNewLabel=new JLabel("START/END");
+  lblNewLabel.setFont(new Font("Futura",Font.PLAIN,14));
+  lblNewLabel.setForeground(Color.WHITE);
+  lblNewLabel.setBackground(Color.BLACK);
+  lblNewLabel.setBounds(6,161,85,49);
+  contentPane.add(lblNewLabel);
+  JLabel lblInfo=new JLabel("INFO");
+  lblInfo.setFont(new Font("Futura",Font.PLAIN,14));
+  lblInfo.setForeground(Color.WHITE);
+  lblInfo.setBackground(Color.BLACK);
+  lblInfo.setBounds(435,161,55,49);
+  contentPane.add(lblInfo);
+  JTextArea textArea=new JTextArea();
+  textArea.setBackground(Color.BLACK);
+  textArea.setBounds(0,158,540,49);
+  contentPane.add(textArea);
+  JLabel lblNiagara=new JLabel("NIAGARA");
+  lblNiagara.setFont(new Font("Futura",Font.PLAIN,50));
+  lblNiagara.setBounds(117,16,275,60);
+  contentPane.add(lblNiagara);
+  JLabel lblSchedule=new JLabel("SCHEDULE");
+  lblSchedule.setFont(new Font("Futura",Font.PLAIN,35));
+  lblSchedule.setBounds(130,75,207,49);
+  contentPane.add(lblSchedule);
+  labelDate=new JLabel("");
+  labelDate.setFont(new Font("Futura",Font.PLAIN,16));
+  labelDate.setBounds(408,58,126,18);
+  contentPane.add(labelDate);
+  JLabel lblNewLabel_1=new JLabel("New label");
+  lblNewLabel_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
+  lblNewLabel_1.setBounds(17,16,88,110);
+  contentPane.add(lblNewLabel_1);
+  JLabel label_1=new JLabel("START/END");
+  label_1.setForeground(Color.BLACK);
+  label_1.setFont(new Font("Futura",Font.PLAIN,14));
+  label_1.setBackground(Color.BLACK);
+  label_1.setBounds(6,258,85,49);
+  contentPane.add(label_1);
+  JTextArea textArea_1=new JTextArea();
+  textArea_1.setForeground(Color.PINK);
+  textArea_1.setBackground(new Color(255,228,225));
+  textArea_1.setBounds(0,252,540,49);
+  contentPane.add(textArea_1);
+  JTextArea textArea_2=new JTextArea();
+  textArea_2.setForeground(Color.PINK);
+  textArea_2.setBackground(new Color(255,228,225));
+  textArea_2.setBounds(0,350,540,49);
+  contentPane.add(textArea_2);
+  JTextArea textArea_3=new JTextArea();
+  textArea_3.setForeground(Color.PINK);
+  textArea_3.setBackground(new Color(255,228,225));
+  textArea_3.setBounds(0,548,540,49);
+  contentPane.add(textArea_3);
+  JTextArea textArea_4=new JTextArea();
+  textArea_4.setForeground(Color.PINK);
+  textArea_4.setBackground(new Color(255,228,225));
+  textArea_4.setBounds(0,450,540,49);
+  contentPane.add(textArea_4);
+  JTextArea textArea_5=new JTextArea();
+  textArea_5.setForeground(Color.PINK);
+  textArea_5.setBackground(new Color(255,228,225));
+  textArea_5.setBounds(0,652,540,49);
+  contentPane.add(textArea_5);
+  JLabel label=new JLabel("START/END");
+  label.setForeground(Color.BLACK);
+  label.setFont(new Font("Futura",Font.PLAIN,14));
+  label.setBackground(Color.BLACK);
+  label.setBounds(6,206,85,49);
+  contentPane.add(label);
+  JLabel label_2=new JLabel("START/END");
+  label_2.setForeground(Color.BLACK);
+  label_2.setFont(new Font("Futura",Font.PLAIN,14));
+  label_2.setBackground(Color.BLACK);
+  label_2.setBounds(6,303,85,49);
+  contentPane.add(label_2);
+  JLabel label_3=new JLabel("START/END");
+  label_3.setForeground(Color.WHITE);
+  label_3.setFont(new Font("Futura",Font.PLAIN,14));
+  label_3.setBackground(Color.BLACK);
+  label_3.setBounds(6,350,85,49);
+  contentPane.add(label_3);
+  JLabel label_4=new JLabel("START/END");
+  label_4.setForeground(Color.BLACK);
+  label_4.setFont(new Font("Futura",Font.PLAIN,14));
+  label_4.setBackground(Color.BLACK);
+  label_4.setBounds(6,395,85,49);
+  contentPane.add(label_4);
+  JLabel label_5=new JLabel("START/END");
+  label_5.setForeground(Color.WHITE);
+  label_5.setFont(new Font("Futura",Font.PLAIN,14));
+  label_5.setBackground(Color.BLACK);
+  label_5.setBounds(6,450,85,49);
+  contentPane.add(label_5);
+  JLabel label_6=new JLabel("START/END");
+  label_6.setForeground(Color.BLACK);
+  label_6.setFont(new Font("Futura",Font.PLAIN,14));
+  label_6.setBackground(Color.BLACK);
+  label_6.setBounds(6,495,85,49);
+  contentPane.add(label_6);
+  JLabel label_7=new JLabel("START/END");
+  label_7.setForeground(Color.WHITE);
+  label_7.setFont(new Font("Futura",Font.PLAIN,14));
+  label_7.setBackground(Color.BLACK);
+  label_7.setBounds(6,558,85,49);
+  contentPane.add(label_7);
+  JLabel label_8=new JLabel("START/END");
+  label_8.setForeground(Color.BLACK);
+  label_8.setFont(new Font("Futura",Font.PLAIN,14));
+  label_8.setBackground(Color.BLACK);
+  label_8.setBounds(6,603,85,49);
+  contentPane.add(label_8);
+  JLabel label_9=new JLabel("START/END");
+  label_9.setForeground(Color.WHITE);
+  label_9.setFont(new Font("Futura",Font.PLAIN,14));
+  label_9.setBackground(Color.BLACK);
+  label_9.setBounds(6,652,85,49);
+  contentPane.add(label_9);
+  clockKronox=new ClockKronox(this);
+}
+ expected, but pic=new JLabel();
+ found.
+!STACK 0
+org.eclipse.wb.internal.core.utils.check.AssertionFailedException: Execution flow problem. {
+  super("Java SlideShow");
+  pic=new JLabel();
+  pic.setBounds(0,30,100,100);
+  tm=new Timer(5000,new ActionListener(){
+    @Override public void actionPerformed(    ActionEvent e){
+      x+=1;
+      if (x >= list.length)       x=0;
+    }
+  }
+);
+  getContentPane().add(pic);
+  tm.start();
+  getContentPane().setLayout(null);
+  setSize(100,100);
+  setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  setBounds(0,0,540,960);
+  contentPane=new JPanel();
+  contentPane.setBackground(Color.WHITE);
+  contentPane.setBorder(new EmptyBorder(5,5,5,5));
+  setContentPane(contentPane);
+  contentPane.setLayout(null);
+  labelTime=new JLabel("");
+  labelTime.setFont(new Font("Futura",Font.PLAIN,55));
+  labelTime.setBounds(321,75,197,74);
+  contentPane.add(labelTime);
+  JLabel lblProgramcourse=new JLabel("PROGRAM/COURSE");
+  lblProgramcourse.setFont(new Font("Futura",Font.PLAIN,14));
+  lblProgramcourse.setForeground(Color.WHITE);
+  lblProgramcourse.setBackground(Color.BLACK);
+  lblProgramcourse.setBounds(130,161,377,49);
+  contentPane.add(lblProgramcourse);
+  JLabel lblRoom=new JLabel("ROOM");
+  lblRoom.setFont(new Font("Futura",Font.PLAIN,14));
+  lblRoom.setForeground(Color.WHITE);
+  lblRoom.setBackground(Color.BLACK);
+  lblRoom.setBounds(315,161,61,49);
+  contentPane.add(lblRoom);
+  JLabel lblNewLabel=new JLabel("START/END");
+  lblNewLabel.setFont(new Font("Futura",Font.PLAIN,14));
+  lblNewLabel.setForeground(Color.WHITE);
+  lblNewLabel.setBackground(Color.BLACK);
+  lblNewLabel.setBounds(6,161,85,49);
+  contentPane.add(lblNewLabel);
+  JLabel lblInfo=new JLabel("INFO");
+  lblInfo.setFont(new Font("Futura",Font.PLAIN,14));
+  lblInfo.setForeground(Color.WHITE);
+  lblInfo.setBackground(Color.BLACK);
+  lblInfo.setBounds(435,161,55,49);
+  contentPane.add(lblInfo);
+  JTextArea textArea=new JTextArea();
+  textArea.setBackground(Color.BLACK);
+  textArea.setBounds(0,158,540,49);
+  contentPane.add(textArea);
+  JLabel lblNiagara=new JLabel("NIAGARA");
+  lblNiagara.setFont(new Font("Futura",Font.PLAIN,50));
+  lblNiagara.setBounds(117,16,275,60);
+  contentPane.add(lblNiagara);
+  JLabel lblSchedule=new JLabel("SCHEDULE");
+  lblSchedule.setFont(new Font("Futura",Font.PLAIN,35));
+  lblSchedule.setBounds(130,75,207,49);
+  contentPane.add(lblSchedule);
+  labelDate=new JLabel("");
+  labelDate.setFont(new Font("Futura",Font.PLAIN,16));
+  labelDate.setBounds(408,58,126,18);
+  contentPane.add(labelDate);
+  JLabel lblNewLabel_1=new JLabel("New label");
+  lblNewLabel_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
+  lblNewLabel_1.setBounds(17,16,88,110);
+  contentPane.add(lblNewLabel_1);
+  JLabel label_1=new JLabel("START/END");
+  label_1.setForeground(Color.BLACK);
+  label_1.setFont(new Font("Futura",Font.PLAIN,14));
+  label_1.setBackground(Color.BLACK);
+  label_1.setBounds(6,258,85,49);
+  contentPane.add(label_1);
+  JTextArea textArea_1=new JTextArea();
+  textArea_1.setForeground(Color.PINK);
+  textArea_1.setBackground(new Color(255,228,225));
+  textArea_1.setBounds(0,252,540,49);
+  contentPane.add(textArea_1);
+  JTextArea textArea_2=new JTextArea();
+  textArea_2.setForeground(Color.PINK);
+  textArea_2.setBackground(new Color(255,228,225));
+  textArea_2.setBounds(0,350,540,49);
+  contentPane.add(textArea_2);
+  JTextArea textArea_3=new JTextArea();
+  textArea_3.setForeground(Color.PINK);
+  textArea_3.setBackground(new Color(255,228,225));
+  textArea_3.setBounds(0,548,540,49);
+  contentPane.add(textArea_3);
+  JTextArea textArea_4=new JTextArea();
+  textArea_4.setForeground(Color.PINK);
+  textArea_4.setBackground(new Color(255,228,225));
+  textArea_4.setBounds(0,450,540,49);
+  contentPane.add(textArea_4);
+  JTextArea textArea_5=new JTextArea();
+  textArea_5.setForeground(Color.PINK);
+  textArea_5.setBackground(new Color(255,228,225));
+  textArea_5.setBounds(0,652,540,49);
+  contentPane.add(textArea_5);
+  JLabel label=new JLabel("START/END");
+  label.setForeground(Color.BLACK);
+  label.setFont(new Font("Futura",Font.PLAIN,14));
+  label.setBackground(Color.BLACK);
+  label.setBounds(6,206,85,49);
+  contentPane.add(label);
+  JLabel label_2=new JLabel("START/END");
+  label_2.setForeground(Color.BLACK);
+  label_2.setFont(new Font("Futura",Font.PLAIN,14));
+  label_2.setBackground(Color.BLACK);
+  label_2.setBounds(6,303,85,49);
+  contentPane.add(label_2);
+  JLabel label_3=new JLabel("START/END");
+  label_3.setForeground(Color.WHITE);
+  label_3.setFont(new Font("Futura",Font.PLAIN,14));
+  label_3.setBackground(Color.BLACK);
+  label_3.setBounds(6,350,85,49);
+  contentPane.add(label_3);
+  JLabel label_4=new JLabel("START/END");
+  label_4.setForeground(Color.BLACK);
+  label_4.setFont(new Font("Futura",Font.PLAIN,14));
+  label_4.setBackground(Color.BLACK);
+  label_4.setBounds(6,395,85,49);
+  contentPane.add(label_4);
+  JLabel label_5=new JLabel("START/END");
+  label_5.setForeground(Color.WHITE);
+  label_5.setFont(new Font("Futura",Font.PLAIN,14));
+  label_5.setBackground(Color.BLACK);
+  label_5.setBounds(6,450,85,49);
+  contentPane.add(label_5);
+  JLabel label_6=new JLabel("START/END");
+  label_6.setForeground(Color.BLACK);
+  label_6.setFont(new Font("Futura",Font.PLAIN,14));
+  label_6.setBackground(Color.BLACK);
+  label_6.setBounds(6,495,85,49);
+  contentPane.add(label_6);
+  JLabel label_7=new JLabel("START/END");
+  label_7.setForeground(Color.WHITE);
+  label_7.setFont(new Font("Futura",Font.PLAIN,14));
+  label_7.setBackground(Color.BLACK);
+  label_7.setBounds(6,558,85,49);
+  contentPane.add(label_7);
+  JLabel label_8=new JLabel("START/END");
+  label_8.setForeground(Color.BLACK);
+  label_8.setFont(new Font("Futura",Font.PLAIN,14));
+  label_8.setBackground(Color.BLACK);
+  label_8.setBounds(6,603,85,49);
+  contentPane.add(label_8);
+  JLabel label_9=new JLabel("START/END");
+  label_9.setForeground(Color.WHITE);
+  label_9.setFont(new Font("Futura",Font.PLAIN,14));
+  label_9.setBackground(Color.BLACK);
+  label_9.setBounds(6,652,85,49);
+  contentPane.add(label_9);
+  clockKronox=new ClockKronox(this);
+}
+ expected, but pic=new JLabel();
+ found.
+	at org.eclipse.wb.internal.core.utils.check.Assert.fail(Assert.java:225)
+	at org.eclipse.wb.internal.core.utils.check.Assert.isTrue(Assert.java:291)
+	at org.eclipse.wb.core.eval.ExecutionFlowDescription.leaveStatement(ExecutionFlowDescription.java:152)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:317)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:247)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:228)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:191)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils2.trackValues(ExecutionFlowUtils2.java:172)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils2.ensureValues(ExecutionFlowUtils2.java:166)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils2.getValue(ExecutionFlowUtils2.java:140)
+	at org.eclipse.wb.internal.core.parser.JavaInfoResolver.getJavaInfo0(JavaInfoResolver.java:179)
+	at org.eclipse.wb.internal.core.parser.JavaInfoResolver.getJavaInfo(JavaInfoResolver.java:140)
+	at org.eclipse.wb.core.model.JavaInfo.getChildRepresentedBy(JavaInfo.java:1085)
+	at org.eclipse.wb.core.model.JavaInfo.isRepresentedBy(JavaInfo.java:1076)
+	at org.eclipse.wb.core.model.JavaInfo.getMethodInvocations(JavaInfo.java:893)
+	at org.eclipse.wb.core.model.JavaInfo.getMethodInvocation(JavaInfo.java:906)
+	at org.eclipse.wb.internal.core.model.property.accessor.SetterAccessor.getMethodInvocation(SetterAccessor.java:210)
+	at org.eclipse.wb.internal.core.model.property.accessor.SetterAccessor.getExpression(SetterAccessor.java:118)
+	at org.eclipse.wb.internal.core.model.property.GenericPropertyImpl.getExpressionInfo(GenericPropertyImpl.java:419)
+	at org.eclipse.wb.internal.core.model.property.GenericPropertyImpl.isModified(GenericPropertyImpl.java:110)
+	at org.eclipse.wb.internal.core.editor.structure.property.ComponentsPropertiesPage.update_defaultValueAction(ComponentsPropertiesPage.java:476)
+	at org.eclipse.wb.internal.core.editor.structure.property.ComponentsPropertiesPage.access$5(ComponentsPropertiesPage.java:474)
+	at org.eclipse.wb.internal.core.editor.structure.property.ComponentsPropertiesPage$4$1.run(ComponentsPropertiesPage.java:256)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.structure.property.ComponentsPropertiesPage$4.selectionChanged(ComponentsPropertiesPage.java:254)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.setActivePropertyInfo(PropertyTable.java:986)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.setInput0(PropertyTable.java:806)
+	at org.eclipse.wb.internal.core.model.property.table.PropertyTable.setInput(PropertyTable.java:746)
+	at org.eclipse.wb.internal.core.editor.structure.property.ComponentsPropertiesPage.showProperties(ComponentsPropertiesPage.java:571)
+	at org.eclipse.wb.internal.core.editor.structure.property.ComponentsPropertiesPage.access$21(ComponentsPropertiesPage.java:564)
+	at org.eclipse.wb.internal.core.editor.structure.property.ComponentsPropertiesPage$12.run(ComponentsPropertiesPage.java:535)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runLog(ExecutionUtils.java:106)
+	at org.eclipse.wb.internal.core.editor.structure.property.ComponentsPropertiesPage.refreshProperties(ComponentsPropertiesPage.java:530)
+	at org.eclipse.wb.internal.core.editor.structure.property.ComponentsPropertiesPage.setSelection(ComponentsPropertiesPage.java:321)
+	at org.eclipse.wb.internal.core.editor.structure.DesignComponentsComposite$1.selectionChanged(DesignComponentsComposite.java:72)
+	at org.eclipse.wb.internal.core.utils.gef.EditPartsSelectionProvider.fireSelectionChanged(EditPartsSelectionProvider.java:111)
+	at org.eclipse.wb.internal.core.utils.gef.EditPartsSelectionProvider.access$0(EditPartsSelectionProvider.java:102)
+	at org.eclipse.wb.internal.core.utils.gef.EditPartsSelectionProvider$1.selectionChanged(EditPartsSelectionProvider.java:40)
+	at org.eclipse.wb.internal.gef.core.AbstractEditPartViewer.fireSelectionChanged(AbstractEditPartViewer.java:202)
+	at org.eclipse.wb.internal.gef.core.AbstractEditPartViewer.setSelection(AbstractEditPartViewer.java:262)
+	at org.eclipse.wb.internal.gef.core.AbstractEditPartViewer.setSelection(AbstractEditPartViewer.java:193)
+	at org.eclipse.wb.internal.gef.tree.TreeViewer$1.widgetSelected(TreeViewer.java:180)
+	at org.eclipse.swt.widgets.TypedListener.handleEvent(TypedListener.java:248)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4230)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1491)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1514)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1499)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1299)
+	at org.eclipse.swt.widgets.Display.runDeferredEvents(Display.java:4072)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3698)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.waitEventLoop(ExecutionUtils.java:71)
+	at org.eclipse.wb.internal.swing.utils.SwingUtils.invokeLaterAndWait(SwingUtils.java:168)
+	at org.eclipse.wb.internal.swing.utils.SwingUtils.runLaterAndWait(SwingUtils.java:73)
+	at org.eclipse.wb.internal.swing.model.component.ComponentInfo.execRefreshOperation(ComponentInfo.java:119)
+	at org.eclipse.wb.core.model.ObjectInfo.refresh(ObjectInfo.java:482)
+	at org.eclipse.wb.core.model.ObjectInfo.endEdit(ObjectInfo.java:446)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.run(ExecutionUtils.java:325)
+	at org.eclipse.wb.core.gef.command.EditCommand.execute(EditCommand.java:50)
+	at org.eclipse.wb.internal.gef.core.EditDomain.executeCommand(EditDomain.java:59)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.executeCommand(TreeDropListener.java:265)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.drop(TreeDropListener.java:103)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:91)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4230)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1491)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1514)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1499)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1299)
+	at org.eclipse.swt.dnd.DropTarget.drop(DropTarget.java:728)
+	at org.eclipse.swt.dnd.DropTarget.outlineView_acceptDrop_item_childIndex(DropTarget.java:746)
+	at org.eclipse.swt.dnd.DropTarget.dropTargetProc(DropTarget.java:471)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.dnd.DropTarget.dndCallSuper(DropTarget.java:210)
+	at org.eclipse.swt.dnd.DropTarget.performDragOperation(DropTarget.java:739)
+	at org.eclipse.swt.dnd.DropTarget.dropTargetProc(DropTarget.java:456)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.mouseDownSuper(Widget.java:1121)
+	at org.eclipse.swt.widgets.Tree.mouseDownSuper(Tree.java:2047)
+	at org.eclipse.swt.widgets.Widget.mouseDown(Widget.java:1113)
+	at org.eclipse.swt.widgets.Control.mouseDown(Control.java:2569)
+	at org.eclipse.swt.widgets.Tree.mouseDown(Tree.java:2015)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5692)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2130)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2337)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5756)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5193)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5342)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:128)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.wb.core 4 4 2016-03-17 14:17:51.845
+!MESSAGE Designer [1.8.0.r45x201506110826.201603171417]: Execution flow problem. pic.setBounds(0,30,100,100);
+ expected, but {
+  super("Java SlideShow");
+  pic=new JLabel();
+  pic.setBounds(0,30,100,100);
+  tm=new Timer(5000,new ActionListener(){
+    @Override public void actionPerformed(    ActionEvent e){
+      x+=1;
+      if (x >= list.length)       x=0;
+    }
+  }
+);
+  getContentPane().add(pic);
+  tm.start();
+  getContentPane().setLayout(null);
+  setSize(100,100);
+  setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  setBounds(0,0,540,960);
+  contentPane=new JPanel();
+  contentPane.setBackground(Color.WHITE);
+  contentPane.setBorder(new EmptyBorder(5,5,5,5));
+  setContentPane(contentPane);
+  contentPane.setLayout(null);
+  labelTime=new JLabel("");
+  labelTime.setFont(new Font("Futura",Font.PLAIN,55));
+  labelTime.setBounds(321,75,197,74);
+  contentPane.add(labelTime);
+  JLabel lblProgramcourse=new JLabel("PROGRAM/COURSE");
+  lblProgramcourse.setFont(new Font("Futura",Font.PLAIN,14));
+  lblProgramcourse.setForeground(Color.WHITE);
+  lblProgramcourse.setBackground(Color.BLACK);
+  lblProgramcourse.setBounds(130,161,377,49);
+  contentPane.add(lblProgramcourse);
+  JLabel lblRoom=new JLabel("ROOM");
+  lblRoom.setFont(new Font("Futura",Font.PLAIN,14));
+  lblRoom.setForeground(Color.WHITE);
+  lblRoom.setBackground(Color.BLACK);
+  lblRoom.setBounds(315,161,61,49);
+  contentPane.add(lblRoom);
+  JLabel lblNewLabel=new JLabel("START/END");
+  lblNewLabel.setFont(new Font("Futura",Font.PLAIN,14));
+  lblNewLabel.setForeground(Color.WHITE);
+  lblNewLabel.setBackground(Color.BLACK);
+  lblNewLabel.setBounds(6,161,85,49);
+  contentPane.add(lblNewLabel);
+  JLabel lblInfo=new JLabel("INFO");
+  lblInfo.setFont(new Font("Futura",Font.PLAIN,14));
+  lblInfo.setForeground(Color.WHITE);
+  lblInfo.setBackground(Color.BLACK);
+  lblInfo.setBounds(435,161,55,49);
+  contentPane.add(lblInfo);
+  JTextArea textArea=new JTextArea();
+  textArea.setBackground(Color.BLACK);
+  textArea.setBounds(0,158,540,49);
+  contentPane.add(textArea);
+  JLabel lblNiagara=new JLabel("NIAGARA");
+  lblNiagara.setFont(new Font("Futura",Font.PLAIN,50));
+  lblNiagara.setBounds(117,16,275,60);
+  contentPane.add(lblNiagara);
+  JLabel lblSchedule=new JLabel("SCHEDULE");
+  lblSchedule.setFont(new Font("Futura",Font.PLAIN,35));
+  lblSchedule.setBounds(130,75,207,49);
+  contentPane.add(lblSchedule);
+  labelDate=new JLabel("");
+  labelDate.setFont(new Font("Futura",Font.PLAIN,16));
+  labelDate.setBounds(408,58,126,18);
+  contentPane.add(labelDate);
+  JLabel lblNewLabel_1=new JLabel("New label");
+  lblNewLabel_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
+  lblNewLabel_1.setBounds(17,16,88,110);
+  contentPane.add(lblNewLabel_1);
+  JLabel label_1=new JLabel("START/END");
+  label_1.setForeground(Color.BLACK);
+  label_1.setFont(new Font("Futura",Font.PLAIN,14));
+  label_1.setBackground(Color.BLACK);
+  label_1.setBounds(6,258,85,49);
+  contentPane.add(label_1);
+  JTextArea textArea_1=new JTextArea();
+  textArea_1.setForeground(Color.PINK);
+  textArea_1.setBackground(new Color(255,228,225));
+  textArea_1.setBounds(0,252,540,49);
+  contentPane.add(textArea_1);
+  JTextArea textArea_2=new JTextArea();
+  textArea_2.setForeground(Color.PINK);
+  textArea_2.setBackground(new Color(255,228,225));
+  textArea_2.setBounds(0,350,540,49);
+  contentPane.add(textArea_2);
+  JTextArea textArea_3=new JTextArea();
+  textArea_3.setForeground(Color.PINK);
+  textArea_3.setBackground(new Color(255,228,225));
+  textArea_3.setBounds(0,548,540,49);
+  contentPane.add(textArea_3);
+  JTextArea textArea_4=new JTextArea();
+  textArea_4.setForeground(Color.PINK);
+  textArea_4.setBackground(new Color(255,228,225));
+  textArea_4.setBounds(0,450,540,49);
+  contentPane.add(textArea_4);
+  JTextArea textArea_5=new JTextArea();
+  textArea_5.setForeground(Color.PINK);
+  textArea_5.setBackground(new Color(255,228,225));
+  textArea_5.setBounds(0,652,540,49);
+  contentPane.add(textArea_5);
+  JLabel label=new JLabel("START/END");
+  label.setForeground(Color.BLACK);
+  label.setFont(new Font("Futura",Font.PLAIN,14));
+  label.setBackground(Color.BLACK);
+  label.setBounds(6,206,85,49);
+  contentPane.add(label);
+  JLabel label_2=new JLabel("START/END");
+  label_2.setForeground(Color.BLACK);
+  label_2.setFont(new Font("Futura",Font.PLAIN,14));
+  label_2.setBackground(Color.BLACK);
+  label_2.setBounds(6,303,85,49);
+  contentPane.add(label_2);
+  JLabel label_3=new JLabel("START/END");
+  label_3.setForeground(Color.WHITE);
+  label_3.setFont(new Font("Futura",Font.PLAIN,14));
+  label_3.setBackground(Color.BLACK);
+  label_3.setBounds(6,350,85,49);
+  contentPane.add(label_3);
+  JLabel label_4=new JLabel("START/END");
+  label_4.setForeground(Color.BLACK);
+  label_4.setFont(new Font("Futura",Font.PLAIN,14));
+  label_4.setBackground(Color.BLACK);
+  label_4.setBounds(6,395,85,49);
+  contentPane.add(label_4);
+  JLabel label_5=new JLabel("START/END");
+  label_5.setForeground(Color.WHITE);
+  label_5.setFont(new Font("Futura",Font.PLAIN,14));
+  label_5.setBackground(Color.BLACK);
+  label_5.setBounds(6,450,85,49);
+  contentPane.add(label_5);
+  JLabel label_6=new JLabel("START/END");
+  label_6.setForeground(Color.BLACK);
+  label_6.setFont(new Font("Futura",Font.PLAIN,14));
+  label_6.setBackground(Color.BLACK);
+  label_6.setBounds(6,495,85,49);
+  contentPane.add(label_6);
+  JLabel label_7=new JLabel("START/END");
+  label_7.setForeground(Color.WHITE);
+  label_7.setFont(new Font("Futura",Font.PLAIN,14));
+  label_7.setBackground(Color.BLACK);
+  label_7.setBounds(6,558,85,49);
+  contentPane.add(label_7);
+  JLabel label_8=new JLabel("START/END");
+  label_8.setForeground(Color.BLACK);
+  label_8.setFont(new Font("Futura",Font.PLAIN,14));
+  label_8.setBackground(Color.BLACK);
+  label_8.setBounds(6,603,85,49);
+  contentPane.add(label_8);
+  JLabel label_9=new JLabel("START/END");
+  label_9.setForeground(Color.WHITE);
+  label_9.setFont(new Font("Futura",Font.PLAIN,14));
+  label_9.setBackground(Color.BLACK);
+  label_9.setBounds(6,652,85,49);
+  contentPane.add(label_9);
+  clockKronox=new ClockKronox(this);
+}
+ found.
+!STACK 0
+org.eclipse.wb.internal.core.utils.check.AssertionFailedException: Execution flow problem. pic.setBounds(0,30,100,100);
+ expected, but {
+  super("Java SlideShow");
+  pic=new JLabel();
+  pic.setBounds(0,30,100,100);
+  tm=new Timer(5000,new ActionListener(){
+    @Override public void actionPerformed(    ActionEvent e){
+      x+=1;
+      if (x >= list.length)       x=0;
+    }
+  }
+);
+  getContentPane().add(pic);
+  tm.start();
+  getContentPane().setLayout(null);
+  setSize(100,100);
+  setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+  setBounds(0,0,540,960);
+  contentPane=new JPanel();
+  contentPane.setBackground(Color.WHITE);
+  contentPane.setBorder(new EmptyBorder(5,5,5,5));
+  setContentPane(contentPane);
+  contentPane.setLayout(null);
+  labelTime=new JLabel("");
+  labelTime.setFont(new Font("Futura",Font.PLAIN,55));
+  labelTime.setBounds(321,75,197,74);
+  contentPane.add(labelTime);
+  JLabel lblProgramcourse=new JLabel("PROGRAM/COURSE");
+  lblProgramcourse.setFont(new Font("Futura",Font.PLAIN,14));
+  lblProgramcourse.setForeground(Color.WHITE);
+  lblProgramcourse.setBackground(Color.BLACK);
+  lblProgramcourse.setBounds(130,161,377,49);
+  contentPane.add(lblProgramcourse);
+  JLabel lblRoom=new JLabel("ROOM");
+  lblRoom.setFont(new Font("Futura",Font.PLAIN,14));
+  lblRoom.setForeground(Color.WHITE);
+  lblRoom.setBackground(Color.BLACK);
+  lblRoom.setBounds(315,161,61,49);
+  contentPane.add(lblRoom);
+  JLabel lblNewLabel=new JLabel("START/END");
+  lblNewLabel.setFont(new Font("Futura",Font.PLAIN,14));
+  lblNewLabel.setForeground(Color.WHITE);
+  lblNewLabel.setBackground(Color.BLACK);
+  lblNewLabel.setBounds(6,161,85,49);
+  contentPane.add(lblNewLabel);
+  JLabel lblInfo=new JLabel("INFO");
+  lblInfo.setFont(new Font("Futura",Font.PLAIN,14));
+  lblInfo.setForeground(Color.WHITE);
+  lblInfo.setBackground(Color.BLACK);
+  lblInfo.setBounds(435,161,55,49);
+  contentPane.add(lblInfo);
+  JTextArea textArea=new JTextArea();
+  textArea.setBackground(Color.BLACK);
+  textArea.setBounds(0,158,540,49);
+  contentPane.add(textArea);
+  JLabel lblNiagara=new JLabel("NIAGARA");
+  lblNiagara.setFont(new Font("Futura",Font.PLAIN,50));
+  lblNiagara.setBounds(117,16,275,60);
+  contentPane.add(lblNiagara);
+  JLabel lblSchedule=new JLabel("SCHEDULE");
+  lblSchedule.setFont(new Font("Futura",Font.PLAIN,35));
+  lblSchedule.setBounds(130,75,207,49);
+  contentPane.add(lblSchedule);
+  labelDate=new JLabel("");
+  labelDate.setFont(new Font("Futura",Font.PLAIN,16));
+  labelDate.setBounds(408,58,126,18);
+  contentPane.add(labelDate);
+  JLabel lblNewLabel_1=new JLabel("New label");
+  lblNewLabel_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
+  lblNewLabel_1.setBounds(17,16,88,110);
+  contentPane.add(lblNewLabel_1);
+  JLabel label_1=new JLabel("START/END");
+  label_1.setForeground(Color.BLACK);
+  label_1.setFont(new Font("Futura",Font.PLAIN,14));
+  label_1.setBackground(Color.BLACK);
+  label_1.setBounds(6,258,85,49);
+  contentPane.add(label_1);
+  JTextArea textArea_1=new JTextArea();
+  textArea_1.setForeground(Color.PINK);
+  textArea_1.setBackground(new Color(255,228,225));
+  textArea_1.setBounds(0,252,540,49);
+  contentPane.add(textArea_1);
+  JTextArea textArea_2=new JTextArea();
+  textArea_2.setForeground(Color.PINK);
+  textArea_2.setBackground(new Color(255,228,225));
+  textArea_2.setBounds(0,350,540,49);
+  contentPane.add(textArea_2);
+  JTextArea textArea_3=new JTextArea();
+  textArea_3.setForeground(Color.PINK);
+  textArea_3.setBackground(new Color(255,228,225));
+  textArea_3.setBounds(0,548,540,49);
+  contentPane.add(textArea_3);
+  JTextArea textArea_4=new JTextArea();
+  textArea_4.setForeground(Color.PINK);
+  textArea_4.setBackground(new Color(255,228,225));
+  textArea_4.setBounds(0,450,540,49);
+  contentPane.add(textArea_4);
+  JTextArea textArea_5=new JTextArea();
+  textArea_5.setForeground(Color.PINK);
+  textArea_5.setBackground(new Color(255,228,225));
+  textArea_5.setBounds(0,652,540,49);
+  contentPane.add(textArea_5);
+  JLabel label=new JLabel("START/END");
+  label.setForeground(Color.BLACK);
+  label.setFont(new Font("Futura",Font.PLAIN,14));
+  label.setBackground(Color.BLACK);
+  label.setBounds(6,206,85,49);
+  contentPane.add(label);
+  JLabel label_2=new JLabel("START/END");
+  label_2.setForeground(Color.BLACK);
+  label_2.setFont(new Font("Futura",Font.PLAIN,14));
+  label_2.setBackground(Color.BLACK);
+  label_2.setBounds(6,303,85,49);
+  contentPane.add(label_2);
+  JLabel label_3=new JLabel("START/END");
+  label_3.setForeground(Color.WHITE);
+  label_3.setFont(new Font("Futura",Font.PLAIN,14));
+  label_3.setBackground(Color.BLACK);
+  label_3.setBounds(6,350,85,49);
+  contentPane.add(label_3);
+  JLabel label_4=new JLabel("START/END");
+  label_4.setForeground(Color.BLACK);
+  label_4.setFont(new Font("Futura",Font.PLAIN,14));
+  label_4.setBackground(Color.BLACK);
+  label_4.setBounds(6,395,85,49);
+  contentPane.add(label_4);
+  JLabel label_5=new JLabel("START/END");
+  label_5.setForeground(Color.WHITE);
+  label_5.setFont(new Font("Futura",Font.PLAIN,14));
+  label_5.setBackground(Color.BLACK);
+  label_5.setBounds(6,450,85,49);
+  contentPane.add(label_5);
+  JLabel label_6=new JLabel("START/END");
+  label_6.setForeground(Color.BLACK);
+  label_6.setFont(new Font("Futura",Font.PLAIN,14));
+  label_6.setBackground(Color.BLACK);
+  label_6.setBounds(6,495,85,49);
+  contentPane.add(label_6);
+  JLabel label_7=new JLabel("START/END");
+  label_7.setForeground(Color.WHITE);
+  label_7.setFont(new Font("Futura",Font.PLAIN,14));
+  label_7.setBackground(Color.BLACK);
+  label_7.setBounds(6,558,85,49);
+  contentPane.add(label_7);
+  JLabel label_8=new JLabel("START/END");
+  label_8.setForeground(Color.BLACK);
+  label_8.setFont(new Font("Futura",Font.PLAIN,14));
+  label_8.setBackground(Color.BLACK);
+  label_8.setBounds(6,603,85,49);
+  contentPane.add(label_8);
+  JLabel label_9=new JLabel("START/END");
+  label_9.setForeground(Color.WHITE);
+  label_9.setFont(new Font("Futura",Font.PLAIN,14));
+  label_9.setBackground(Color.BLACK);
+  label_9.setBounds(6,652,85,49);
+  contentPane.add(label_9);
+  clockKronox=new ClockKronox(this);
+}
+ found.
+	at org.eclipse.wb.internal.core.utils.check.Assert.fail(Assert.java:225)
+	at org.eclipse.wb.internal.core.utils.check.Assert.isTrue(Assert.java:291)
+	at org.eclipse.wb.core.eval.ExecutionFlowDescription.leaveStatement(ExecutionFlowDescription.java:152)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:317)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement0(ExecutionFlowUtils.java:336)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visitStatement(ExecutionFlowUtils.java:315)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:247)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:228)
+	at org.eclipse.wb.core.eval.ExecutionFlowUtils.visit(ExecutionFlowUtils.java:191)
+	at org.eclipse.wb.core.model.JavaInfo.refresh_create(JavaInfo.java:1199)
+	at org.eclipse.wb.core.model.ObjectInfo.refreshCreate0(ObjectInfo.java:550)
+	at org.eclipse.wb.core.model.ObjectInfo.access$0(ObjectInfo.java:546)
+	at org.eclipse.wb.core.model.ObjectInfo$5$1.run(ObjectInfo.java:486)
+	at org.eclipse.wb.internal.core.utils.execution.ExecutionUtils.runDesignTime(ExecutionUtils.java:145)
+	at org.eclipse.wb.core.model.ObjectInfo$5.run(ObjectInfo.java:484)
+	at org.eclipse.wb.internal.swing.utils.SwingUtils$2.run(SwingUtils.java:76)
+	at java.awt.event.InvocationEvent.dispatch(InvocationEvent.java:311)
+	at java.awt.EventQueue.dispatchEventImpl(EventQueue.java:756)
+	at java.awt.EventQueue.access$500(EventQueue.java:97)
+	at java.awt.EventQueue$3.run(EventQueue.java:709)
+	at java.awt.EventQueue$3.run(EventQueue.java:703)
+	at java.security.AccessController.doPrivileged(Native Method)
+	at java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(ProtectionDomain.java:76)
+	at java.awt.EventQueue.dispatchEvent(EventQueue.java:726)
+	at java.awt.EventDispatchThread.pumpOneEventForFilters(EventDispatchThread.java:201)
+	at java.awt.EventDispatchThread.pumpEventsForFilter(EventDispatchThread.java:116)
+	at java.awt.EventDispatchThread.pumpEventsForHierarchy(EventDispatchThread.java:105)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:101)
+	at java.awt.EventDispatchThread.pumpEvents(EventDispatchThread.java:93)
+	at java.awt.EventDispatchThread.run(EventDispatchThread.java:82)
+
+!ENTRY org.eclipse.ui 4 0 2016-03-17 14:17:52.293
+!MESSAGE Unhandled event loop exception
+!STACK 0
+org.eclipse.core.runtime.AssertionFailedException: null argument:
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:85)
+	at org.eclipse.core.runtime.Assert.isNotNull(Assert.java:73)
+	at org.eclipse.wb.internal.gef.core.AbstractEditPartViewer.setSelection(AbstractEditPartViewer.java:249)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.resetSelectionFromModels(TreeDropListener.java:141)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.drop(TreeDropListener.java:107)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:91)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4230)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1491)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1514)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1499)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1299)
+	at org.eclipse.swt.dnd.DropTarget.drop(DropTarget.java:728)
+	at org.eclipse.swt.dnd.DropTarget.outlineView_acceptDrop_item_childIndex(DropTarget.java:746)
+	at org.eclipse.swt.dnd.DropTarget.dropTargetProc(DropTarget.java:471)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.dnd.DropTarget.dndCallSuper(DropTarget.java:210)
+	at org.eclipse.swt.dnd.DropTarget.performDragOperation(DropTarget.java:739)
+	at org.eclipse.swt.dnd.DropTarget.dropTargetProc(DropTarget.java:456)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.mouseDownSuper(Widget.java:1121)
+	at org.eclipse.swt.widgets.Tree.mouseDownSuper(Tree.java:2047)
+	at org.eclipse.swt.widgets.Widget.mouseDown(Widget.java:1113)
+	at org.eclipse.swt.widgets.Control.mouseDown(Control.java:2569)
+	at org.eclipse.swt.widgets.Tree.mouseDown(Tree.java:2015)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5692)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2130)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2337)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5756)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5193)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5342)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:128)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+
+!ENTRY org.eclipse.ui 4 0 2016-03-17 14:18:29.153
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.updateTargetRequestAfter(TreeDropListener.java:176)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.dragOver(TreeDropListener.java:86)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:81)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4230)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1491)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1514)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1499)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1299)
+	at org.eclipse.swt.dnd.DropTarget.draggingUpdated(DropTarget.java:319)
+	at org.eclipse.swt.dnd.DropTarget.dropTargetProc(DropTarget.java:452)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.mouseDownSuper(Widget.java:1121)
+	at org.eclipse.swt.widgets.Tree.mouseDownSuper(Tree.java:2047)
+	at org.eclipse.swt.widgets.Widget.mouseDown(Widget.java:1113)
+	at org.eclipse.swt.widgets.Control.mouseDown(Control.java:2569)
+	at org.eclipse.swt.widgets.Tree.mouseDown(Tree.java:2015)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5692)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2130)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2337)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5756)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5193)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5342)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:128)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2016-03-17 14:18:44.943 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nb_NO
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/johanneradford/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/johanneradford/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-03-17 14:18:45.925
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 0 2016-03-17 14:19:08.352
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.updateTargetRequestAfter(TreeDropListener.java:176)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.dragOver(TreeDropListener.java:86)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:81)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4230)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1491)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1514)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1499)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1299)
+	at org.eclipse.swt.dnd.DropTarget.draggingUpdated(DropTarget.java:319)
+	at org.eclipse.swt.dnd.DropTarget.dropTargetProc(DropTarget.java:452)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.mouseDownSuper(Widget.java:1121)
+	at org.eclipse.swt.widgets.Tree.mouseDownSuper(Tree.java:2047)
+	at org.eclipse.swt.widgets.Widget.mouseDown(Widget.java:1113)
+	at org.eclipse.swt.widgets.Control.mouseDown(Control.java:2569)
+	at org.eclipse.swt.widgets.Tree.mouseDown(Tree.java:2015)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5692)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2130)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2337)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5756)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5193)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5342)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:128)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2016-03-17 14:19:41.592 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nb_NO
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/johanneradford/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/johanneradford/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-03-17 14:19:42.609
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.ui 4 0 2016-03-17 14:39:57.343
+!MESSAGE Unhandled event loop exception
+!STACK 0
+java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.updateTargetRequestAfter(TreeDropListener.java:176)
+	at org.eclipse.wb.internal.gef.tree.dnd.TreeDropListener.dragOver(TreeDropListener.java:86)
+	at org.eclipse.swt.dnd.DNDListener.handleEvent(DNDListener.java:81)
+	at org.eclipse.swt.widgets.EventTable.sendEvent(EventTable.java:84)
+	at org.eclipse.swt.widgets.Display.sendEvent(Display.java:4230)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1491)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1514)
+	at org.eclipse.swt.widgets.Widget.sendEvent(Widget.java:1499)
+	at org.eclipse.swt.widgets.Widget.notifyListeners(Widget.java:1299)
+	at org.eclipse.swt.dnd.DropTarget.draggingUpdated(DropTarget.java:319)
+	at org.eclipse.swt.dnd.DropTarget.dropTargetProc(DropTarget.java:452)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.mouseDownSuper(Widget.java:1121)
+	at org.eclipse.swt.widgets.Tree.mouseDownSuper(Tree.java:2047)
+	at org.eclipse.swt.widgets.Widget.mouseDown(Widget.java:1113)
+	at org.eclipse.swt.widgets.Control.mouseDown(Control.java:2569)
+	at org.eclipse.swt.widgets.Tree.mouseDown(Tree.java:2015)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5692)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Widget.callSuper(Widget.java:227)
+	at org.eclipse.swt.widgets.Widget.windowSendEvent(Widget.java:2130)
+	at org.eclipse.swt.widgets.Shell.windowSendEvent(Shell.java:2337)
+	at org.eclipse.swt.widgets.Display.windowProc(Display.java:5756)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSendSuper(Native Method)
+	at org.eclipse.swt.widgets.Display.applicationSendEvent(Display.java:5193)
+	at org.eclipse.swt.widgets.Display.applicationProc(Display.java:5342)
+	at org.eclipse.swt.internal.cocoa.OS.objc_msgSend(Native Method)
+	at org.eclipse.swt.internal.cocoa.NSApplication.sendEvent(NSApplication.java:128)
+	at org.eclipse.swt.widgets.Display.readAndDispatch(Display.java:3695)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine$4.run(PartRenderingEngine.java:1127)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.e4.ui.internal.workbench.swt.PartRenderingEngine.run(PartRenderingEngine.java:1018)
+	at org.eclipse.e4.ui.internal.workbench.E4Workbench.createAndRunUI(E4Workbench.java:156)
+	at org.eclipse.ui.internal.Workbench$5.run(Workbench.java:654)
+	at org.eclipse.core.databinding.observable.Realm.runWithDefault(Realm.java:337)
+	at org.eclipse.ui.internal.Workbench.createAndRunWorkbench(Workbench.java:598)
+	at org.eclipse.ui.PlatformUI.createAndRunWorkbench(PlatformUI.java:150)
+	at org.eclipse.ui.internal.ide.application.IDEApplication.start(IDEApplication.java:139)
+	at org.eclipse.equinox.internal.app.EclipseAppHandle.run(EclipseAppHandle.java:196)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.runApplication(EclipseAppLauncher.java:134)
+	at org.eclipse.core.runtime.internal.adaptor.EclipseAppLauncher.start(EclipseAppLauncher.java:104)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:380)
+	at org.eclipse.core.runtime.adaptor.EclipseStarter.run(EclipseStarter.java:235)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:497)
+	at org.eclipse.equinox.launcher.Main.invokeFramework(Main.java:669)
+	at org.eclipse.equinox.launcher.Main.basicRun(Main.java:608)
+	at org.eclipse.equinox.launcher.Main.run(Main.java:1515)
+!SESSION 2016-03-17 15:00:06.716 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nb_NO
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/johanneradford/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/johanneradford/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-03-17 15:00:07.768
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-03-17 15:01:30.798
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
+!SESSION 2016-03-17 15:23:58.086 -----------------------------------------------
+eclipse.buildId=4.5.1.M20150904-0015
+java.version=1.8.0_66
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=nb_NO
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/johanneradford/.eclipse_keyring -showlocation
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/johanneradford/.eclipse_keyring -showlocation
+
+!ENTRY org.eclipse.core.net 1 0 2016-03-17 15:23:59.209
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 2 10035 2016-03-17 15:24:01.492
+!MESSAGE The workspace exited with unsaved changes in the previous session; refreshing workspace to recover changes.
