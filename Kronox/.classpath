@@ -9,5 +9,7 @@
 	<classpathentry kind="lib" path="lib/httpcore-4.3.2.jar"/>
 	<classpathentry kind="lib" path="lib/httpmime-4.3.3.jar"/>
 	<classpathentry kind="lib" path="lib/xmlpull-xpp3-1.1.4c.jar"/>
+	<classpathentry kind="lib" path="src/1.png"/>
+	<classpathentry kind="lib" path="src/2.png"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

@@ -1,5 +1,4 @@
 
-
 import java.awt.BorderLayout;
 import java.util.Calendar;
 import java.util.*;
@@ -39,7 +38,12 @@ public class KronoxGUI extends JFrame {
 	Timer tm;
 	int x = 0;
 	
-
+	String[] list = {
+			"/Users/johanneradford/Desktop/1.png",
+			"/Users/johanneradford/Desktop/2.png",
+	};
+	
+	
 	
 
 
@@ -74,6 +78,33 @@ public class KronoxGUI extends JFrame {
 	 * Create the frame.
 	 */
 	public KronoxGUI() {
+	
+			super("Java SlideShow");
+			pic = new JLabel();
+			pic.setBounds(0, 30, 100, 100);
+			//SetImageSize(1);
+			
+			tm = new Timer(5000, new ActionListener(){
+
+				@Override
+				public void actionPerformed(ActionEvent e) {
+					//SetImageSize(x);
+					x += 1;
+					if(x >= list.length)
+						x = 0;
+
+				}
+				
+				
+			} );
+			
+			getContentPane().add(pic);
+			tm.start();
+			getContentPane().setLayout(null);
+			setSize(100,100);
+			
+		
+
 	
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
@@ -136,6 +167,11 @@ public class KronoxGUI extends JFrame {
 		labelDate.setFont(new Font("Futura", Font.PLAIN, 16));
 		labelDate.setBounds(408, 58, 126, 18);
 		contentPane.add(labelDate);
+		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
+		lblNewLabel_1.setBounds(17, 16, 88, 110);
+		contentPane.add(lblNewLabel_1);
 	
 		
       
