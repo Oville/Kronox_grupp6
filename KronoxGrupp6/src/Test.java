@@ -37,6 +37,32 @@ public class Test {
 				Node p = bookings.item(i);
 				if(p.getNodeType() == Node.ELEMENT_NODE){
 					Element doc1 = (Element) p;
+					
+					NodeList items3 = doc1.getElementsByTagName("moment");	            
+		            for (int t = 0; t < items3.getLength(); t++)
+		            {
+		                Node n1 = items3.item(t);
+		                if (n1.getNodeType() == Node.ELEMENT_NODE) {
+
+		        			Element eElement = (Element) n1;
+		        			eElement.getTextContent();
+		        			
+		        			System.out.println(eElement.getTextContent());
+		        			String rawString = eElement.getTextContent();
+		        
+		        			int startPos = rawString.indexOf("<b>");
+		        			int slutPos = rawString.indexOf("</b>");
+		        			rawString = rawString.trim();
+		        			if(startPos > 0 && slutPos > 0){
+		        			info = rawString.substring(startPos + 3 , slutPos);
+		        			info = info.replaceAll("&#228;", "ä");
+		                }
+		        		
+		        			
+		                }
+		            }
+			
+					
 				NodeList items2 = doc1.getElementsByTagName("bokadeDatum");	            
 	            for (int t = 0; t < items2.getLength(); t++)
 	            {
@@ -55,6 +81,7 @@ public class Test {
 	                }
 	            }
 				}
+				
 				if(p.getNodeType() == Node.ELEMENT_NODE){
 				Element booking = (Element) p;
 				NodeList resource = booking.getElementsByTagName("resursNod");
@@ -69,18 +96,7 @@ public class Test {
 							if(specifiedClass.getNodeType() == Node.ELEMENT_NODE){
 								Element name = (Element) specifiedClass;
 								
-								Element momentType = (Element) p;
-								String id2 = momentType.getAttribute("moment");
-								NodeList momentResource = momentType.getElementsByTagName("moment");
-								for(int e = 0; e < momentResource.getLength(); e++){
-									Node specifiedMoment = momentResource.item(e);
-									if(specifiedMoment.getNodeType() == Node.ELEMENT_NODE){
-										Element moment = (Element) specifiedMoment;
-							
-											
-										if(id2.contains("moment")){
-											info = moment.getTextContent();
-										}
+								
 											
 								if(id.contains("RESURSER_LOKALER")){
 									room = name.getTextContent();
@@ -98,8 +114,8 @@ public class Test {
 							
 						}
 					}
-				}
-				}
+				
+				
 				
 				superDone.add(new Parser(info, room, teacher, startTid, slutTid));
 			}

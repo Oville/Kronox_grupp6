@@ -22,7 +22,8 @@ public class Parser {
 	}
 
 	public String ParserKurs(){
-		return this.kurs = kurs;
+		this.kurs = kurs;
+		return kurs;
 	}
 	
 	
@@ -34,7 +35,7 @@ public class Parser {
 	
 
 	public String toString(){
-		String string = startTime + "-" + endTime + " " + lokal + " "  + kurs;
+		String string = moment + " " + startTime + "-" + endTime + " " + lokal + " "  + kurs + "\n";
 		return string;
 	}
 

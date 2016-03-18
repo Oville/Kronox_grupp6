@@ -428,12 +428,10 @@ public class KronoxGUI extends JFrame {
 		txtrDatavetenskapOchApplikationsutveckling.setFont(new Font("Futura", Font.PLAIN, 10));
 		txtrDatavetenskapOchApplikationsutveckling.setBounds(103, 504, 187, 79);
 		contentPane.add(txtrDatavetenskapOchApplikationsutveckling);
-		//test.superDone.add()
 			
 			
 			
-		//txtrDatavetenskapOchApplikationsutveckling.append(parser.ParserKurs());
-		//System.out.println(parser.ParserKurs());
+		txtrDatavetenskapOchApplikationsutveckling.setText(parser.ParserKurs());
 		
 		JTextArea txtrProjektarbeteOchHandledning = new JTextArea();
 		txtrProjektarbeteOchHandledning.setText("Projektarbete och handledning");
