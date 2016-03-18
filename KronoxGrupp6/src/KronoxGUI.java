@@ -33,6 +33,9 @@ public class KronoxGUI extends JFrame {
 	private JLabel labelTime;
 	private JLabel labelDate;
 	private ClockKronox clockKronox;
+	private Parser parser;
+	private Test test;
+	private String kurs;// = "kurs";
 	
 	JLabel pic;
 	Timer tm;
@@ -332,7 +335,7 @@ public class KronoxGUI extends JFrame {
 		
 		JTextArea txtrByggingenjrProjektOch = new JTextArea();
 		txtrByggingenjrProjektOch.setText("Transport Management\n- Transporter och hållbar utveckling");
-		txtrByggingenjrProjektOch.setBackground(new Color(255, 228, 225));
+		txtrByggingenjrProjektOch.setBackground(new Color(155, 45, 45, 30));
 		txtrByggingenjrProjektOch.setFont(new Font("Futura", Font.PLAIN, 10));
 		txtrByggingenjrProjektOch.setBounds(103, 333, 221, 34);
 		contentPane.add(txtrByggingenjrProjektOch);
@@ -347,52 +350,52 @@ public class KronoxGUI extends JFrame {
 		JTextArea txtrInternationalProgrammeFor = new JTextArea();
 		txtrInternationalProgrammeFor.setText("International Programme for European \nStudies\n-Urban Images in Literature and Film");
 		txtrInternationalProgrammeFor.setFont(new Font("Futura", Font.PLAIN, 10));
-		txtrInternationalProgrammeFor.setBackground(new Color(255, 228, 225));
+		txtrInternationalProgrammeFor.setBackground(new Color(155, 45, 45, 0));
 		txtrInternationalProgrammeFor.setBounds(103, 432, 221, 56);
 		contentPane.add(txtrInternationalProgrammeFor);
 		
 		JTextArea txtrUrbanImagesIn = new JTextArea();
 		txtrUrbanImagesIn.setText("Seminar 3\t");
 		txtrUrbanImagesIn.setFont(new Font("Futura", Font.PLAIN, 10));
-		txtrUrbanImagesIn.setBackground(new Color(255, 228, 225));
+		txtrUrbanImagesIn.setBackground(new Color(155, 45, 45, 0));
 		txtrUrbanImagesIn.setBounds(394, 436, 120, 34);
 		contentPane.add(txtrUrbanImagesIn);
 	
 		JTextArea txtrFrgestundInfrSaltenta = new JTextArea();
 		txtrFrgestundInfrSaltenta.setText("Frågestund inför saltenta.\nÅterkoppling till övning om \ngranskning av C-Uppsats.");
 		txtrFrgestundInfrSaltenta.setFont(new Font("Futura", Font.PLAIN, 10));
-		txtrFrgestundInfrSaltenta.setBackground(new Color(255, 228, 225));
+		txtrFrgestundInfrSaltenta.setBackground(new Color(155, 45, 45, 0));
 		txtrFrgestundInfrSaltenta.setBounds(394, 668, 142, 43);
 		contentPane.add(txtrFrgestundInfrSaltenta);
 		
 		JTextArea txtrSocionomprogrammetForskningsmetodik = new JTextArea();
 		txtrSocionomprogrammetForskningsmetodik.setText("Socionomprogrammet\n- Forskningsmetodik\n");
 		txtrSocionomprogrammetForskningsmetodik.setFont(new Font("Futura", Font.PLAIN, 10));
-		txtrSocionomprogrammetForskningsmetodik.setBackground(new Color(255, 228, 225));
+		txtrSocionomprogrammetForskningsmetodik.setBackground(new Color(155, 0, 0, 0));
 		txtrSocionomprogrammetForskningsmetodik.setBounds(103, 668, 177, 41);
 		contentPane.add(txtrSocionomprogrammetForskningsmetodik);
 		
 		JTextArea textArea_1 = new JTextArea();
 		textArea_1.setForeground(Color.PINK);
-		textArea_1.setBackground(new Color(255, 228, 225));
+		textArea_1.setBackground(new Color(155, 45, 45, 30));
 		textArea_1.setBounds(0, 220, 540, 65);
 		contentPane.add(textArea_1);
 		
 		JTextArea textArea_2 = new JTextArea();
 		textArea_2.setForeground(Color.PINK);
-		textArea_2.setBackground(new Color(255, 228, 225));
+		textArea_2.setBackground(new Color(155, 45, 45, 30));
 		textArea_2.setBounds(0, 328, 540, 44);
 		contentPane.add(textArea_2);
 		
 		JTextArea textArea_3 = new JTextArea();
 		textArea_3.setForeground(Color.PINK);
-		textArea_3.setBackground(new Color(255, 228, 225));
+		textArea_3.setBackground(new Color(155, 45, 45, 30));
 		textArea_3.setBounds(0, 661, 540, 56);
 		contentPane.add(textArea_3);
 		
 		JTextArea textArea_4 = new JTextArea();
 		textArea_4.setForeground(Color.PINK);
-		textArea_4.setBackground(new Color(255, 228, 225));
+		textArea_4.setBackground(new Color(155, 45, 45, 30));
 		textArea_4.setBounds(0, 428, 540, 60);
 		contentPane.add(textArea_4);
 		
@@ -422,11 +425,15 @@ public class KronoxGUI extends JFrame {
 		contentPane.add(txtrUppsatsSeminar);
 		
 		JTextArea txtrDatavetenskapOchApplikationsutveckling = new JTextArea();
-		txtrDatavetenskapOchApplikationsutveckling.setText("Datavetenskap och applikationsutveckling, \nInformationsarkitekt, Spelutveckling,\nSystemutvecklare\n- Systemutveckling och projekt I\n");
 		txtrDatavetenskapOchApplikationsutveckling.setFont(new Font("Futura", Font.PLAIN, 10));
 		txtrDatavetenskapOchApplikationsutveckling.setBounds(103, 504, 187, 79);
 		contentPane.add(txtrDatavetenskapOchApplikationsutveckling);
-		//txtrDatavetenskapOchApplikationsutveckling.setText(Parser.ParserKurs());
+		//test.superDone.add()
+			
+			
+			
+		//txtrDatavetenskapOchApplikationsutveckling.append(parser.ParserKurs());
+		//System.out.println(parser.ParserKurs());
 		
 		JTextArea txtrProjektarbeteOchHandledning = new JTextArea();
 		txtrProjektarbeteOchHandledning.setText("Projektarbete och handledning");

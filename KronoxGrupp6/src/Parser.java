@@ -19,9 +19,10 @@ public class Parser {
 		this.lokal = lokal;
 	}
 
-	public void ParserKurs (String kurs){
-		this.kurs = kurs;
+	public String ParserKurs(){
+		return this.kurs = kurs;
 	}
+	
 	
 	public void ParserStartTime (String startTime, String endTime){
 		this.startTime = startTime;
@@ -34,5 +35,7 @@ public class Parser {
 		String string = startTime + "-" + endTime + " " + lokal + " "  + kurs;
 		return string;
 	}
+
+	
 	
 }

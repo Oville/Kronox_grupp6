@@ -23,6 +23,7 @@ public class Test {
 		ArrayList<Parser> superDone = new ArrayList<Parser>();
 		
 		String room = null;
+		String info = null;
 		String teacher = null;
 		String startTid = null;
     	String slutTid = null;
@@ -68,15 +69,30 @@ public class Test {
 							if(specifiedClass.getNodeType() == Node.ELEMENT_NODE){
 								Element name = (Element) specifiedClass;
 								
+								Element momentType = (Element) p;
+								NodeList momentResource = momentType.getElementsByTagName("moment");
+								for(int e = 0; e < momentResource.getLength(); e++){
+									Node specifiedMoment = momentResource.item(e);
+									if(specifiedMoment.getNodeType() == Node.ELEMENT_NODE){
+										Element moment = (Element) specifiedMoment;
+							
+											
+										if(id.contains("moment")){
+											info = moment.getTextContent();
+										}
+											
 								if(id.contains("RESURSER_LOKALER")){
 									room = name.getTextContent();
 									
 								}
+								
 								if(id.contains("UTB_KURSINSTANS_GRUPPER")){
 									teacher = name.getTextContent();
 									
 								}
-								
+							}
+						}
+						
 							}
 							
 						}
