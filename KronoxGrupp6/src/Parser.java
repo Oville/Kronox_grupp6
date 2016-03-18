@@ -5,13 +5,15 @@ public class Parser {
 	private String kurs;
 	private String endTime;
 	private String startTime;
+	private String moment;
 	
 
-	public Parser(String lokal, String kurs, String startTime, String endTime) {
+	public Parser(String moment, String lokal, String kurs, String startTime, String endTime) {
 		this.lokal = lokal;
 		this.kurs = kurs;
 		this.endTime = endTime;
 		this.startTime = startTime;
+		this.moment = moment;
 		
 	}
 	

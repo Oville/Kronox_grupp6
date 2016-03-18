@@ -70,6 +70,7 @@ public class Test {
 								Element name = (Element) specifiedClass;
 								
 								Element momentType = (Element) p;
+								String id2 = momentType.getAttribute("moment");
 								NodeList momentResource = momentType.getElementsByTagName("moment");
 								for(int e = 0; e < momentResource.getLength(); e++){
 									Node specifiedMoment = momentResource.item(e);
@@ -77,7 +78,7 @@ public class Test {
 										Element moment = (Element) specifiedMoment;
 							
 											
-										if(id.contains("moment")){
+										if(id2.contains("moment")){
 											info = moment.getTextContent();
 										}
 											
@@ -100,7 +101,7 @@ public class Test {
 				}
 				}
 				
-				superDone.add(new Parser(room, teacher, startTid, slutTid));
+				superDone.add(new Parser(info, room, teacher, startTid, slutTid));
 			}
 		}
 		catch (Exception e)
