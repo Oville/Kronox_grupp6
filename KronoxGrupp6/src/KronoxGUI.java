@@ -42,6 +42,7 @@ public class KronoxGUI extends JFrame {
 			"/Users/johanneradford/Desktop/1.png",
 			"/Users/johanneradford/Desktop/2.png",
 	};
+	private final JTextArea textArea_5 = new JTextArea();
 
 
 
@@ -105,7 +106,12 @@ public class KronoxGUI extends JFrame {
 	
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(0, 0, 540, 960);
+		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
+
+		double width = screenSize.getWidth();
+		double height = screenSize.getHeight();
+		setBounds(0, 0, width, height);
+
 		contentPane = new JPanel();
 		contentPane.setForeground(Color.BLACK);
 		contentPane.setBackground(Color.WHITE);
@@ -163,7 +169,7 @@ public class KronoxGUI extends JFrame {
 		
 		labelDate = new JLabel("");
 		labelDate.setFont(new Font("Futura", Font.PLAIN, 16));
-		labelDate.setBounds(404, 36, 126, 18);
+		labelDate.setBounds(404, 17, 126, 18);
 		contentPane.add(labelDate);
 		
 		JLabel lblNewLabel_1 = new JLabel("New label");
@@ -433,6 +439,8 @@ public class KronoxGUI extends JFrame {
 		txtrAAB.setText("A0304\nA0322\nB0203\nB0303\nB0321\nC0306\nC0309\nC0312\nC0325");
 		txtrAAB.setBounds(315, 494, 55, 162);
 		contentPane.add(txtrAAB);
+		textArea_5.setBounds(103, 721, 98, 60);
+		contentPane.add(textArea_5);
 		
 		
 		
@@ -443,6 +451,10 @@ public class KronoxGUI extends JFrame {
 				
 		clockKronox = new ClockKronox(this);
 		
+		
+	}
+	private void setBounds(int x2, int y, double width, double height) {
+		// TODO Auto-generated method stub
 		
 	}
 }
