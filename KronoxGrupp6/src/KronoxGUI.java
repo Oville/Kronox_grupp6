@@ -106,12 +106,8 @@ public class KronoxGUI extends JFrame {
 	
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		Dimension screenSize = Toolkit.getDefaultToolkit().getScreenSize();
-
-		double width = screenSize.getWidth();
-		double height = screenSize.getHeight();
-		setBounds(0, 0, width, height);
-
+		setBounds(0, 0, 540, 960);
+		
 		contentPane = new JPanel();
 		contentPane.setForeground(Color.BLACK);
 		contentPane.setBackground(Color.WHITE);
@@ -451,10 +447,6 @@ public class KronoxGUI extends JFrame {
 				
 		clockKronox = new ClockKronox(this);
 		
-		
-	}
-	private void setBounds(int x2, int y, double width, double height) {
-		// TODO Auto-generated method stub
 		
 	}
 }
