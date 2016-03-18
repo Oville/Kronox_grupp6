@@ -104,10 +104,10 @@ public class KronoxGUI extends JFrame {
 	
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		//setBounds(0, 0, 1920, 1080);
+		setBounds(0, 0, 1080, 1920);
 		
-		setMinimumSize(new Dimension(1920, 1080));
-		setSize(new Dimension(1920, 1080));
+		//setMinimumSize(new Dimension(1920, 1080));
+		//setSize(new Dimension(1920, 1080));
 		this.setUndecorated(true);
 	
 		
