@@ -77,7 +77,7 @@ public class KronoxGUI extends JFrame {
 	 */
 	public KronoxGUI() {
 	
-			super("Java SlideShow");
+			/**super("Java SlideShow");
 			pic = new JLabel();
 			pic.setBounds(0, 30, 100, 100);
 			//SetImageSize(1);
@@ -99,15 +99,15 @@ public class KronoxGUI extends JFrame {
 			getContentPane().add(pic);
 			tm.start();
 			getContentPane().setLayout(null);
-			setSize(100,100);
+			setSize(100,100);*/
 			
 	
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(0, 0, 1920, 1080);
+		//setBounds(0, 0, 1920, 1080);
 		
-		//setMinimumSize(new Dimension(1920, 1080));
-		//setSize(new Dimension(1920, 1080));
+		setMinimumSize(new Dimension(1920, 1080));
+		setSize(new Dimension(1920, 1080));
 		this.setUndecorated(true);
 	
 		
