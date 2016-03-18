@@ -101,12 +101,15 @@ public class KronoxGUI extends JFrame {
 			getContentPane().setLayout(null);
 			setSize(100,100);
 			
-		
-
 	
 
 		setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-		setBounds(0, 0, 540, 960);
+		//setBounds(0, 0, 540, 960);
+		
+		setMinimumSize(new Dimension(1920, 1080));
+		setSize(new Dimension(1920, 1080));
+		this.setUndecorated(true);
+	
 		
 		contentPane = new JPanel();
 		contentPane.setForeground(Color.BLACK);
