@@ -35,7 +35,7 @@ public class Parser {
 	
 
 	public String toString(){
-		String string = moment + " " + startTime + "-" + endTime + " " + lokal + " "  + kurs + "\n";
+		String string =  startTime + "-" + endTime + " " + lokal + " "  + kurs + " "+ moment + "\n";
 		return string;
 	}
 

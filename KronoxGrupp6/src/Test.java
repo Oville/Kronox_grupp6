@@ -47,15 +47,21 @@ public class Test {
 		        			Element eElement = (Element) n1;
 		        			eElement.getTextContent();
 		        			
-		        			System.out.println(eElement.getTextContent());
+		        			
 		        			String rawString = eElement.getTextContent();
-		        
+		        			if(rawString.contains("<b>")){
 		        			int startPos = rawString.indexOf("<b>");
 		        			int slutPos = rawString.indexOf("</b>");
 		        			rawString = rawString.trim();
 		        			if(startPos > 0 && slutPos > 0){
 		        			info = rawString.substring(startPos + 3 , slutPos);
 		        			info = info.replaceAll("&#228;", "ä");
+		        			info = info.replaceAll("&#246;", "ö");
+		        			}else{
+		        				info = eElement.getTextContent();
+		        			}
+		        			
+		        			
 		                }
 		        		
 		        			
