@@ -1,25 +1,19 @@
 
 import java.awt.BorderLayout;
-import java.util.Calendar;
 import java.util.*;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.image.*;
 import java.awt.event.*;
-import java.util.Random;
+
 import javax.swing.Timer;
 import java.awt.EventQueue;
 
-import javax.swing.JFrame;
-import javax.swing.JPanel;
 import javax.swing.border.EmptyBorder;
-import javax.swing.JLabel;
-import java.awt.Color;
-import javax.swing.JTextArea;
-import java.awt.Font;
-import javax.swing.ImageIcon;
-import javax.swing.JTextField;
+import javax.swing.text.Document;
 
+import java.awt.Color;
+import java.awt.Font;
 import java.awt.Image.*;
 import java.awt.event.ActionEvent; 
 import java.awt.event.ActionListener;
@@ -34,11 +28,11 @@ public class KronoxGUI extends JFrame {
 	private ClockKronox clockKronox;
 	private Parser parser;
 	private Test test;
-	private String kurs;// = "kurs";
+	private String kurs;// = "course";
 
-
+	public ArrayList<Parser> PAR = new ArrayList<Parser>();
 	
-
+/**
 	Timer tm;
 	int x = 0;
 	
@@ -46,7 +40,7 @@ public class KronoxGUI extends JFrame {
 			"/Users/johanneradford/Desktop/1.png",
 			"/Users/johanneradford/Desktop/2.png",
 	};
-	
+	*/
 	
 
 
@@ -57,7 +51,7 @@ public class KronoxGUI extends JFrame {
 		labelDate.setText(date);
 		
 	}
-	
+
 
 	
 	public static void main(String[] args) {
@@ -99,13 +93,7 @@ public class KronoxGUI extends JFrame {
 			this.setUndecorated(true);
 			
 			System.out.println(width);
-			System.out.println(height);
-			
-		
-			
-			
-			
-			
+			System.out.println(height);	
 			
 		contentPane = new JPanel();
 		contentPane.setForeground(Color.BLACK);
@@ -119,6 +107,8 @@ public class KronoxGUI extends JFrame {
 		//labelTime.setBounds(349, 54, 197, 74);
 		labelTime.setBounds(698, 108, 197, 74);
 		contentPane.add(labelTime);
+		
+		
 		
 		//RUBRIKER
 		
@@ -183,10 +173,7 @@ public class KronoxGUI extends JFrame {
 		lblNewLabel_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
 		//lblNewLabel_1.setBounds(17, 6, 88, 110);
 		lblNewLabel_1.setBounds(34, 12, 88, 110);
-		contentPane.add(lblNewLabel_1);
-		
-		
-		
+		contentPane.add(lblNewLabel_1);	
 	
 		
 		JLabel room2 = new JLabel("C0E11");
@@ -511,6 +498,18 @@ public class KronoxGUI extends JFrame {
 		moment7.setBounds(788, 1034, 146, 34);
 		contentPane.add(moment7);
 		
+		
+	//TEST PARSER
+		PAR = parser.ParserKurs();
+		
+		for(int i = 0; i < PAR.size(); i ++){
+		
+			JLabel testKurs = new JLabel((Icon) PAR.get(i));
+			testKurs.setBounds(134, 77, 187, 115);
+			contentPane.add(PAR);
+			//testKurs.add(PAR);
+		
+		
 		JTextArea moment3 = new JTextArea();
 		moment3.setText("Seminarium halva klassen:\nmiljöledning i transportföretag");
 		moment3.setFont(new Font("Futura", Font.PLAIN, 10));
@@ -518,21 +517,7 @@ public class KronoxGUI extends JFrame {
 		//moment3.setBounds(388, 285, 120, 34);
 		moment3.setBounds(776, 570, 120, 34);
 		contentPane.add(moment3);
-		
-		
-
-		//test.superDone.add()
-			
-			
-			
-		//txtrDatavetenskapOchApplikationsutveckling.append(parser.ParserKurs());
-		//System.out.println(parser.ParserKurs());
-
-
-		
-	
-		//txtrDatavetenskapOchApplikationsutveckling.setText(parser.ParserKurs(kurs));
-		
+		}
 		
 		
 		
@@ -565,12 +550,21 @@ public class KronoxGUI extends JFrame {
 		rad4.setBounds(0, 1378, 1080, 56);
 		contentPane.add(rad4);
 		
-
 		
-	
+		
 				
 		clockKronox = new ClockKronox(this);
 		
+		PAR = parser.ParserKurs();
+		
+		
+		class getScheduleFromKronox extends Thread{
+			@Override
+			public void run(){
+				PAR = parser.ParserKurs();
+			}
+			
+		}
 		
 	}
 }
