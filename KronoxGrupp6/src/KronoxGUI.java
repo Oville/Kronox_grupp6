@@ -129,52 +129,40 @@ public class KronoxGUI extends JFrame {
 		
 		//RUBRIKER
 		
-<<<<<<< Updated upstream
 		JLabel lblProgramcourse = new JLabel("PROGRAM/COURSE");
 		lblProgramcourse.setFont(new Font("Futura", Font.PLAIN, 23));
-=======
 		lblProgramcourse = new JLabel("PROGRAM/COURSE");
 		lblProgramcourse.setFont(new Font("Futura", Font.PLAIN, 14));
->>>>>>> Stashed changes
 		lblProgramcourse.setForeground(Color.WHITE);
 		lblProgramcourse.setBackground(Color.BLACK);
 		//lblProgramcourse.setBounds(130, 129, 165, 49);
 		lblProgramcourse.setBounds(260, 255, 249, 49);
 		contentPane.add(lblProgramcourse);
 		
-<<<<<<< Updated upstream
 		JLabel lblRoom = new JLabel("ROOM");
 		lblRoom.setFont(new Font("Futura", Font.PLAIN, 23));
-=======
 		lblRoom = new JLabel("ROOM");
 		lblRoom.setFont(new Font("Futura", Font.PLAIN, 14));
->>>>>>> Stashed changes
 		lblRoom.setForeground(Color.WHITE);
 		lblRoom.setBackground(Color.BLACK);
 		//lblRoom.setBounds(315, 129, 61, 49);
 		lblRoom.setBounds(630, 255, 187, 49);
 		contentPane.add(lblRoom);
 		
-<<<<<<< Updated upstream
 		JLabel lblStartEnd = new JLabel("START/END");
 		lblStartEnd.setFont(new Font("Futura", Font.PLAIN, 23));
-=======
 		lblStartEnd = new JLabel("START/END");
 		lblStartEnd.setFont(new Font("Futura", Font.PLAIN, 14));
->>>>>>> Stashed changes
 		lblStartEnd.setForeground(Color.WHITE);
 		lblStartEnd.setBackground(Color.BLACK);
 		//lblStartEnd.setBounds(6, 129, 85, 49);
 		lblStartEnd.setBounds(30, 255, 156, 49);
 		contentPane.add(lblStartEnd);
 		
-<<<<<<< Updated upstream
 		JLabel lblInfo = new JLabel("INFO");
 		lblInfo.setFont(new Font("Futura", Font.PLAIN, 23));
-=======
 		lblInfo = new JLabel("INFO");
 		lblInfo.setFont(new Font("Futura", Font.PLAIN, 14));
->>>>>>> Stashed changes
 		lblInfo.setForeground(Color.WHITE);
 		lblInfo.setBackground(Color.BLACK);
 		//lblInfo.setBounds(435, 129, 55, 49);
@@ -187,24 +175,20 @@ public class KronoxGUI extends JFrame {
 		textArea.setBounds(0, 250, 1080, 60);
 		contentPane.add(textArea);
 		
-<<<<<<< Updated upstream
 		JLabel lblNiagara = new JLabel("NIAGARA");
 		lblNiagara.setFont(new Font("Futura", Font.PLAIN, 80));
-=======
 		lblNiagara = new JLabel("NIAGARA");
 		lblNiagara.setFont(new Font("Futura", Font.PLAIN, 50));
->>>>>>> Stashed changes
 		//lblNiagara.setBounds(117, 6, 275, 60);
 		lblNiagara.setBounds(245, 12, 399, 79);
 		contentPane.add(lblNiagara);
 		
-<<<<<<< Updated upstream
 		JLabel lblSchedule = new JLabel("SCHEDULE");
 		lblSchedule.setFont(new Font("Futura", Font.PLAIN, 50));
-=======
+
 		lblSchedule = new JLabel("SCHEDULE");
 		lblSchedule.setFont(new Font("Futura", Font.PLAIN, 35));
->>>>>>> Stashed changes
+
 		//lblSchedule.setBounds(130, 65, 207, 49);
 		lblSchedule.setBounds(245, 108, 274, 49);
 		contentPane.add(lblSchedule);
@@ -220,17 +204,10 @@ public class KronoxGUI extends JFrame {
 		lblNewLabel_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
 		//lblNewLabel_1.setBounds(17, 6, 88, 110);
 		lblNewLabel_1.setBounds(34, 12, 88, 110);
-<<<<<<< Updated upstream
 		contentPane.add(lblNewLabel_1);	
-=======
 		contentPane.add(lblNewLabel_1);
 		
-<<<<<<< Updated upstream
->>>>>>> Stashed changes
-	
-		
 
-=======
 		room2 = new JLabel("C0E11");
 		room2.setForeground(Color.BLACK);
 		room2.setFont(new Font("Futura", Font.PLAIN, 13));
@@ -246,7 +223,6 @@ public class KronoxGUI extends JFrame {
 		//moment2.setBounds(394, 232, 146, 41);
 		moment2.setBounds(788, 464, 146, 41);
 		contentPane.add(moment2);
->>>>>>> Stashed changes
 		
 		
 		//TIDER
