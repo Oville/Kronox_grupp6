@@ -103,9 +103,9 @@ public class KronoxGUI extends JFrame {
 		contentPane.setLayout(null);
 		
 		labelTime = new JLabel("");
-		labelTime.setFont(new Font("Futura", Font.PLAIN, 55));
+		labelTime.setFont(new Font("Futura", Font.PLAIN, 80));
 		//labelTime.setBounds(349, 54, 197, 74);
-		labelTime.setBounds(698, 108, 197, 74);
+		labelTime.setBounds(698, 108, 359, 135);
 		contentPane.add(labelTime);
 		
 		
@@ -113,53 +113,53 @@ public class KronoxGUI extends JFrame {
 		//RUBRIKER
 		
 		JLabel lblProgramcourse = new JLabel("PROGRAM/COURSE");
-		lblProgramcourse.setFont(new Font("Futura", Font.PLAIN, 14));
+		lblProgramcourse.setFont(new Font("Futura", Font.PLAIN, 23));
 		lblProgramcourse.setForeground(Color.WHITE);
 		lblProgramcourse.setBackground(Color.BLACK);
 		//lblProgramcourse.setBounds(130, 129, 165, 49);
-		lblProgramcourse.setBounds(260, 258, 165, 49);
+		lblProgramcourse.setBounds(260, 255, 249, 49);
 		contentPane.add(lblProgramcourse);
 		
 		JLabel lblRoom = new JLabel("ROOM");
-		lblRoom.setFont(new Font("Futura", Font.PLAIN, 14));
+		lblRoom.setFont(new Font("Futura", Font.PLAIN, 23));
 		lblRoom.setForeground(Color.WHITE);
 		lblRoom.setBackground(Color.BLACK);
 		//lblRoom.setBounds(315, 129, 61, 49);
-		lblRoom.setBounds(630, 258, 61, 49);
+		lblRoom.setBounds(630, 255, 187, 49);
 		contentPane.add(lblRoom);
 		
 		JLabel lblStartEnd = new JLabel("START/END");
-		lblStartEnd.setFont(new Font("Futura", Font.PLAIN, 14));
+		lblStartEnd.setFont(new Font("Futura", Font.PLAIN, 23));
 		lblStartEnd.setForeground(Color.WHITE);
 		lblStartEnd.setBackground(Color.BLACK);
 		//lblStartEnd.setBounds(6, 129, 85, 49);
-		lblStartEnd.setBounds(12, 258, 85, 49);
+		lblStartEnd.setBounds(30, 255, 156, 49);
 		contentPane.add(lblStartEnd);
 		
 		JLabel lblInfo = new JLabel("INFO");
-		lblInfo.setFont(new Font("Futura", Font.PLAIN, 14));
+		lblInfo.setFont(new Font("Futura", Font.PLAIN, 23));
 		lblInfo.setForeground(Color.WHITE);
 		lblInfo.setBackground(Color.BLACK);
 		//lblInfo.setBounds(435, 129, 55, 49);
-		lblInfo.setBounds(870, 258, 55, 49);
+		lblInfo.setBounds(870, 255, 110, 49);
 		contentPane.add(lblInfo);
 		
 		JTextArea textArea = new JTextArea();
 		textArea.setBackground(Color.BLACK);
 		//textArea.setBounds(0, 126, 540, 49);
-		textArea.setBounds(0, 252, 1080, 49);
+		textArea.setBounds(0, 250, 1080, 60);
 		contentPane.add(textArea);
 		
 		JLabel lblNiagara = new JLabel("NIAGARA");
-		lblNiagara.setFont(new Font("Futura", Font.PLAIN, 50));
+		lblNiagara.setFont(new Font("Futura", Font.PLAIN, 80));
 		//lblNiagara.setBounds(117, 6, 275, 60);
-		lblNiagara.setBounds(234, 12, 275, 60);
+		lblNiagara.setBounds(245, 12, 399, 79);
 		contentPane.add(lblNiagara);
 		
 		JLabel lblSchedule = new JLabel("SCHEDULE");
-		lblSchedule.setFont(new Font("Futura", Font.PLAIN, 35));
+		lblSchedule.setFont(new Font("Futura", Font.PLAIN, 50));
 		//lblSchedule.setBounds(130, 65, 207, 49);
-		lblSchedule.setBounds(260, 130, 207, 49);
+		lblSchedule.setBounds(245, 108, 274, 49);
 		contentPane.add(lblSchedule);
 		
 		labelDate = new JLabel("");
@@ -173,33 +173,24 @@ public class KronoxGUI extends JFrame {
 		lblNewLabel_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
 		//lblNewLabel_1.setBounds(17, 6, 88, 110);
 		lblNewLabel_1.setBounds(34, 12, 88, 110);
+<<<<<<< Updated upstream
 		contentPane.add(lblNewLabel_1);	
+=======
+		contentPane.add(lblNewLabel_1);
+		
+>>>>>>> Stashed changes
 	
 		
-		JLabel room2 = new JLabel("C0E11");
-		room2.setForeground(Color.BLACK);
-		room2.setFont(new Font("Futura", Font.PLAIN, 13));
-		room2.setBackground(Color.BLACK);
-		//room2.setBounds(315, 227, 61, 49);
-		room2.setBounds(630, 454, 61, 49);
-		contentPane.add(room2);
-		
-		JLabel moment2 = new JLabel("Föreläsning: Fackverk I");
-		moment2.setForeground(Color.BLACK);
-		moment2.setFont(new Font("Futura", Font.PLAIN, 10));
-		moment2.setBackground(Color.BLACK);
-		//moment2.setBounds(394, 232, 146, 41);
-		moment2.setBounds(788, 464, 146, 41);
-		contentPane.add(moment2);
+
 		
 		
 		//TIDER
 		JLabel time1 = new JLabel("08:15-12:00");
 		time1.setForeground(Color.BLACK);
-		time1.setFont(new Font("Futura", Font.PLAIN, 14));
+		time1.setFont(new Font("Futura", Font.PLAIN, 25));
 		time1.setBackground(Color.BLACK);
 		//time1.setBounds(6, 174, 85, 49);
-		time1.setBounds(12, 348, 85, 49);
+		time1.setBounds(28, 310, 177, 70);
 		contentPane.add(time1);
 		
 		JLabel time2 = new JLabel("08:15-12:00");
@@ -207,7 +198,7 @@ public class KronoxGUI extends JFrame {
 		time2.setFont(new Font("Futura", Font.PLAIN, 14));
 		time2.setBackground(Color.BLACK);
 		//time2.setBounds(6, 227, 85, 49);
-		time2.setBounds(12, 454, 85, 49);
+		time2.setBounds(30, 454, 85, 49);
 		contentPane.add(time2);
 		
 		JLabel time3 = new JLabel("08:15-12:00");
@@ -215,7 +206,7 @@ public class KronoxGUI extends JFrame {
 		time3.setFont(new Font("Futura", Font.PLAIN, 14));
 		time3.setBackground(Color.BLACK);
 		//time3.setBounds(6, 281, 85, 49);
-		time3.setBounds(12, 562, 85, 49);
+		time3.setBounds(30, 562, 85, 49);
 		contentPane.add(time3);
 		
 		JLabel time4 = new JLabel("08:15-12:00");
@@ -223,7 +214,7 @@ public class KronoxGUI extends JFrame {
 		time4.setFont(new Font("Futura", Font.PLAIN, 14));
 		time4.setBackground(Color.BLACK);
 		//time4.setBounds(6, 328, 85, 49);
-		time4.setBounds(12, 656, 85, 49);
+		time4.setBounds(30, 656, 85, 49);
 		contentPane.add(time4);
 		
 		JLabel time5 = new JLabel("08:15-12:00");
@@ -231,7 +222,7 @@ public class KronoxGUI extends JFrame {
 		time5.setFont(new Font("Futura", Font.PLAIN, 14));
 		time5.setBackground(Color.BLACK);
 		//time5.setBounds(6, 389, 85, 49);
-		time5.setBounds(12, 778, 85, 49);
+		time5.setBounds(30, 778, 85, 49);
 		contentPane.add(time5);
 		
 		JLabel time6 = new JLabel("08:15-12:00");
@@ -262,11 +253,19 @@ public class KronoxGUI extends JFrame {
 		//ROOMS
 		JLabel room1 = new JLabel("A0513");
 		room1.setForeground(Color.BLACK);
-		room1.setFont(new Font("Futura", Font.PLAIN, 13));
+		room1.setFont(new Font("Futura", Font.PLAIN, 25));
 		room1.setBackground(Color.BLACK);
 		//room1.setBounds(315, 174, 61, 49);
-		room1.setBounds(630, 348, 61, 49);
+		room1.setBounds(630, 310, 126, 70);
 		contentPane.add(room1);
+		
+		JLabel room2 = new JLabel("C0E11");
+		room2.setForeground(Color.BLACK);
+		room2.setFont(new Font("Futura", Font.PLAIN, 13));
+		room2.setBackground(Color.BLACK);
+		//room2.setBounds(315, 227, 61, 49);
+		room2.setBounds(630, 454, 61, 49);
+		contentPane.add(room2);
 		
 		JLabel room3 = new JLabel("B0305");
 		room3.setForeground(Color.BLACK);
@@ -317,6 +316,15 @@ public class KronoxGUI extends JFrame {
 		
 		
 		//KURSER
+
+		
+		JTextArea kurs1 = new JTextArea();
+		kurs1.setText("Verksamhetsförlagd utbildning\nVFU\n");
+		kurs1.setFont(new Font("Futura", Font.PLAIN, 18));
+		//kurs1.setBounds(103, 187, 151, 34);
+		kurs1.setBounds(260, 320, 297, 60);
+		contentPane.add(kurs1);
+		
 		JTextArea kurs2 = new JTextArea();
 		kurs2.setText("Verksamhetsförlagd utbildning\nVFU\n");
 		kurs2.setFont(new Font("Futura", Font.PLAIN, 10));
@@ -324,12 +332,12 @@ public class KronoxGUI extends JFrame {
 		kurs2.setBounds(206, 490, 151, 34);
 		contentPane.add(kurs2);
 		
-		JTextArea kurs1 = new JTextArea();
-		kurs1.setText("Verksamhetsförlagd utbildning\nVFU\n");
-		kurs1.setFont(new Font("Futura", Font.PLAIN, 10));
-		//kurs1.setBounds(103, 187, 151, 34);
-		kurs1.setBounds(206, 374, 151, 34);
-		contentPane.add(kurs1);
+		JTextArea kurs3 = new JTextArea();
+		kurs3.setFont(new Font("Futura", Font.PLAIN, 10));
+		kurs3.setText("Verksamhetsförlagd utbildning\nVFU\n");
+		//kurs3.setBounds(103, 296, 151, 34);
+		kurs3.setBounds(206, 592, 151, 34);
+		contentPane.add(kurs3);
 		
 		JTextArea kurs4 = new JTextArea();
 		kurs4.setText("Transport Management\n- Transporter och hållbar utveckling");
@@ -339,6 +347,14 @@ public class KronoxGUI extends JFrame {
 		kurs4.setBounds(206, 666, 187, 34);
 		contentPane.add(kurs4);
 		
+		
+		JTextArea kurs5 = new JTextArea();
+		kurs5.setText("Visuell kommunikation\n- Visuell kommunikation: Examensarbete");
+		kurs5.setFont(new Font("Futura", Font.PLAIN, 10));
+		//kurs5.setBounds(103, 407, 187, 34);
+		kurs5.setBounds(206, 814, 187, 34);
+		contentPane.add(kurs5);
+		
 		JTextArea kurs6 = new JTextArea();
 		kurs6.setText("International Programme for European \nStudies\n-Urban Images in Literature and Film");
 		kurs6.setFont(new Font("Futura", Font.PLAIN, 10));
@@ -346,6 +362,13 @@ public class KronoxGUI extends JFrame {
 		//kurs6.setBounds(103, 450, 221, 49);
 		kurs6.setBounds(206, 900, 221, 49);
 		contentPane.add(kurs6);
+		
+		JTextArea kurs7 = new JTextArea();
+		kurs7.setText("Datavetenskap");
+		kurs7.setFont(new Font("Futura", Font.PLAIN, 10));
+		//kurs7.setBounds(103, 514, 187, 79);
+		kurs7.setBounds(206, 1028, 187, 79);
+		contentPane.add(kurs7);
 	
 	
 		JTextArea kurs8 = new JTextArea();
@@ -355,110 +378,37 @@ public class KronoxGUI extends JFrame {
 		//kurs8.setBounds(103, 696, 177, 41);
 		kurs8.setBounds(206, 1392, 177, 41);
 		contentPane.add(kurs8);
-
-		
-		JTextArea kurs3 = new JTextArea();
-		kurs3.setFont(new Font("Futura", Font.PLAIN, 10));
-		kurs3.setText("Verksamhetsförlagd utbildning\nVFU\n");
-		//kurs3.setBounds(103, 296, 151, 34);
-		kurs3.setBounds(206, 592, 151, 34);
-		contentPane.add(kurs3);
-		
-		JTextArea kurs5 = new JTextArea();
-		kurs5.setText("Visuell kommunikation\n- Visuell kommunikation: Examensarbete");
-		kurs5.setFont(new Font("Futura", Font.PLAIN, 10));
-		//kurs5.setBounds(103, 407, 187, 34);
-		kurs5.setBounds(206, 814, 187, 34);
-		contentPane.add(kurs5);
-	
-
-		JTextArea txtrFrgestundInfrSaltenta = new JTextArea();
-		txtrFrgestundInfrSaltenta.setText("Frågestund inför saltenta.\nÅterkoppling till övning om \ngranskning av C-Uppsats.");
-		txtrFrgestundInfrSaltenta.setFont(new Font("Futura", Font.PLAIN, 10));
-		txtrFrgestundInfrSaltenta.setBackground(new Color(155, 45, 45, 0));
-		txtrFrgestundInfrSaltenta.setBounds(394, 668, 142, 43);
-		contentPane.add(txtrFrgestundInfrSaltenta);
-		
-		JTextArea txtrSocionomprogrammetForskningsmetodik = new JTextArea();
-		txtrSocionomprogrammetForskningsmetodik.setText("Socionomprogrammet\n- Forskningsmetodik\n");
-		txtrSocionomprogrammetForskningsmetodik.setFont(new Font("Futura", Font.PLAIN, 10));
-		txtrSocionomprogrammetForskningsmetodik.setBackground(new Color(155, 0, 0, 0));
-		txtrSocionomprogrammetForskningsmetodik.setBounds(103, 668, 177, 41);
-		contentPane.add(txtrSocionomprogrammetForskningsmetodik);
-		
-		JTextArea textArea_1 = new JTextArea();
-		textArea_1.setForeground(Color.PINK);
-		textArea_1.setBackground(new Color(155, 45, 45, 30));
-		textArea_1.setBounds(0, 220, 540, 65);
-		contentPane.add(textArea_1);
-		
-		JTextArea textArea_2 = new JTextArea();
-		textArea_2.setForeground(Color.PINK);
-		textArea_2.setBackground(new Color(155, 45, 45, 30));
-		textArea_2.setBounds(0, 328, 540, 44);
-		contentPane.add(textArea_2);
-		
-		JTextArea textArea_3 = new JTextArea();
-		textArea_3.setForeground(Color.PINK);
-		textArea_3.setBackground(new Color(155, 45, 45, 30));
-		textArea_3.setBounds(0, 661, 540, 56);
-		contentPane.add(textArea_3);
-		
-		JTextArea textArea_4 = new JTextArea();
-		textArea_4.setForeground(Color.PINK);
-		textArea_4.setBackground(new Color(155, 45, 45, 30));
-		textArea_4.setBounds(0, 428, 540, 60);
-		contentPane.add(textArea_4);
-		
-		JLabel lblFredsOchKonfliktvetenskap_11 = new JLabel("- Freds- och konfliktvetenskap III");
-		lblFredsOchKonfliktvetenskap_11.setForeground(Color.BLACK);
-		lblFredsOchKonfliktvetenskap_11.setFont(new Font("Futura", Font.PLAIN, 10));
-		lblFredsOchKonfliktvetenskap_11.setBackground(Color.BLACK);
-		lblFredsOchKonfliktvetenskap_11.setBounds(103, 190, 165, 34);
-		contentPane.add(lblFredsOchKonfliktvetenskap_11);
-		
-		JTextArea txtrVerksamhetsfrlagdUtbildning = new JTextArea();
-		txtrVerksamhetsfrlagdUtbildning.setFont(new Font("Futura", Font.PLAIN, 10));
-		txtrVerksamhetsfrlagdUtbildning.setText("Verksamhetsförlagd utbildning\nVFU\n");
-		txtrVerksamhetsfrlagdUtbildning.setBounds(103, 296, 151, 34);
-		contentPane.add(txtrVerksamhetsfrlagdUtbildning);
-		
-		JTextArea txtrVisuellKommunikation = new JTextArea();
-		txtrVisuellKommunikation.setText("Visuell kommunikation\n- Visuell kommunikation: Examensarbete");
-		txtrVisuellKommunikation.setFont(new Font("Futura", Font.PLAIN, 10));
-		txtrVisuellKommunikation.setBounds(103, 386, 187, 34);
-		contentPane.add(txtrVisuellKommunikation);
-		
-		JTextArea txtrUppsatsSeminar = new JTextArea();
-		txtrUppsatsSeminar.setText("50% Uppsats seminar\t");
-		txtrUppsatsSeminar.setFont(new Font("Futura", Font.PLAIN, 10));
-		txtrUppsatsSeminar.setBounds(394, 379, 146, 44);
-		contentPane.add(txtrUppsatsSeminar);
-		
-		JTextArea txtrDatavetenskapOchApplikationsutveckling = new JTextArea();
-		txtrDatavetenskapOchApplikationsutveckling.setFont(new Font("Futura", Font.PLAIN, 10));
-		txtrDatavetenskapOchApplikationsutveckling.setBounds(103, 504, 187, 79);
-		contentPane.add(txtrDatavetenskapOchApplikationsutveckling);
 			
 			
 			
 		//txtrDatavetenskapOchApplikationsutveckling.setText(parser.ParserKurs());
 
-		JTextArea kurs7 = new JTextArea();
-		kurs7.setText("Datavetenskap");
-		kurs7.setFont(new Font("Futura", Font.PLAIN, 10));
-		//kurs7.setBounds(103, 514, 187, 79);
-		kurs7.setBounds(206, 1028, 187, 79);
-		contentPane.add(kurs7);
+
 		
 		//MOMENT
 		JLabel moment1 = new JLabel("Obligatory seminar (1 ECTS)");
 		moment1.setForeground(Color.BLACK);
-		moment1.setFont(new Font("Futura", Font.PLAIN, 10));
+		moment1.setFont(new Font("Futura", Font.PLAIN, 18));
 		moment1.setBackground(Color.BLACK);
 		//moment1.setBounds(394, 175, 146, 49);
-		moment1.setBounds(788, 350, 146, 49);
+		moment1.setBounds(870, 310, 210, 70);
 		contentPane.add(moment1);
+		
+		JLabel moment2 = new JLabel("Föreläsning: Fackverk I");
+		moment2.setForeground(Color.BLACK);
+		moment2.setFont(new Font("Futura", Font.PLAIN, 10));
+		moment2.setBackground(Color.BLACK);
+		//moment2.setBounds(394, 232, 146, 41);
+		moment2.setBounds(788, 464, 146, 41);
+		contentPane.add(moment2);
+		
+		JTextArea moment3 = new JTextArea();
+		moment3.setText("Seminarium halva klassen:\nmiljöledning i transportföretag");
+		moment3.setFont(new Font("Futura", Font.PLAIN, 10));
+		moment3.setBackground(new Color(255, 228, 225));
+		//moment3.setBounds(388, 285, 120, 34);
+		moment3.setBounds(776, 570, 120, 34);
+		contentPane.add(moment3);
 		
 		JTextArea moment4 = new JTextArea();
 		moment4.setBackground(new Color(255, 228, 225));
@@ -468,21 +418,6 @@ public class KronoxGUI extends JFrame {
 		moment4.setBounds(788, 666, 120, 34);
 		contentPane.add(moment4);
 		
-		JTextArea moment6 = new JTextArea();
-		moment6.setText("Seminar 3\t");
-		moment6.setFont(new Font("Futura", Font.PLAIN, 10));
-		moment6.setBackground(new Color(155, 45, 45, 0));
-		//moment6.setBounds(394, 458, 136, 41);
-		moment6.setBounds(788, 916, 136, 41);
-		contentPane.add(moment6);
-		
-		JTextArea moment8 = new JTextArea();
-		moment8.setText("Frågestund inför saltenta.\nÅterkoppling till övning om \ngranskning av C-Uppsats.");
-		moment8.setFont(new Font("Futura", Font.PLAIN, 10));
-		moment8.setBackground(new Color(155, 45, 45, 0));
-		//moment8.setBounds(394, 696, 142, 43);
-		moment8.setBounds(788, 1392, 142, 43);
-		contentPane.add(moment8);
 		
 		JTextArea moment5 = new JTextArea();
 		moment5.setText("50% Uppsats seminar\t");
@@ -491,6 +426,14 @@ public class KronoxGUI extends JFrame {
 		moment5.setBounds(788, 814, 146, 31);
 		contentPane.add(moment5);
 		
+		JTextArea moment6 = new JTextArea();
+		moment6.setText("Seminar 3\t");
+		moment6.setFont(new Font("Futura", Font.PLAIN, 10));
+		moment6.setBackground(new Color(155, 45, 45, 0));
+		//moment6.setBounds(394, 458, 136, 41);
+		moment6.setBounds(788, 916, 136, 41);
+		contentPane.add(moment6);
+		
 		JTextArea moment7 = new JTextArea();
 		moment7.setText("Projektarbete och handledning");
 		moment7.setFont(new Font("Futura", Font.PLAIN, 10));
@@ -498,6 +441,18 @@ public class KronoxGUI extends JFrame {
 		moment7.setBounds(788, 1034, 146, 34);
 		contentPane.add(moment7);
 		
+		JTextArea moment8 = new JTextArea();
+		moment8.setText("Frågestund inför saltenta.\nÅterkoppling till övning om \ngranskning av C-Uppsats.");
+		moment8.setFont(new Font("Futura", Font.PLAIN, 10));
+		moment8.setBackground(new Color(155, 45, 45, 0));
+		//moment8.setBounds(394, 696, 142, 43);
+		moment8.setBounds(788, 1392, 142, 43);
+		contentPane.add(moment8);
+
+		
+
+		
+<<<<<<< Updated upstream
 		
 	//TEST PARSER
 		PAR = parser.ParserKurs();
@@ -518,37 +473,54 @@ public class KronoxGUI extends JFrame {
 		moment3.setBounds(776, 570, 120, 34);
 		contentPane.add(moment3);
 		}
+=======
+
+		
+		
+
+		//test.superDone.add()
+			
+			
+			
+		//txtrDatavetenskapOchApplikationsutveckling.append(parser.ParserKurs());
+		//System.out.println(parser.ParserKurs());
+
+
+		
+	
+		//txtrDatavetenskapOchApplikationsutveckling.setText(parser.ParserKurs(kurs));
+		
+>>>>>>> Stashed changes
 		
 		
 		
 		//RADER
-		JTextArea rad1 = new JTextArea();
-		rad1.setForeground(Color.PINK);
-		rad1.setBackground(new Color(155, 45, 45, 30));
-		//rad1.setBounds(0, 229, 540, 56);
-		rad1.setBounds(0, 458, 1080, 56);
-		contentPane.add(rad1);
+
 		
-		JTextArea rad2 = new JTextArea();
-		rad2.setForeground(Color.PINK);
-		rad2.setBackground(new Color(155, 45, 45, 30));
-		//rad2.setBounds(0, 333, 540, 56);
-		rad2.setBounds(0, 666, 1080, 56);
-		contentPane.add(rad2);
+		JTextArea textArea_1 = new JTextArea();
+		textArea_1.setForeground(Color.PINK);
+		textArea_1.setBackground(new Color(155, 45, 45, 30));
+		textArea_1.setBounds(0, 380, 1080, 70);
+		contentPane.add(textArea_1);
 		
-		JTextArea rad3 = new JTextArea();
-		rad3.setForeground(Color.PINK);
-		rad3.setBackground(new Color(155, 45, 45, 30));
-		//rad3.setBounds(0, 445, 540, 60);
-		rad3.setBounds(0, 890, 1080, 60);
-		contentPane.add(rad3);
+		JTextArea textArea_2 = new JTextArea();
+		textArea_2.setForeground(Color.PINK);
+		textArea_2.setBackground(new Color(155, 45, 45, 30));
+		textArea_2.setBounds(0, 550, 1080, 44);
+		contentPane.add(textArea_2);
 		
-		JTextArea rad4 = new JTextArea();
-		rad4.setForeground(Color.PINK);
-		rad4.setBackground(new Color(155, 45, 45, 30));
-		//rad4.setBounds(0, 689, 540, 56);
-		rad4.setBounds(0, 1378, 1080, 56);
-		contentPane.add(rad4);
+		JTextArea textArea_3 = new JTextArea();
+		textArea_3.setForeground(Color.PINK);
+		textArea_3.setBackground(new Color(155, 45, 45, 30));
+		textArea_3.setBounds(0, 661, 1080, 56);
+		contentPane.add(textArea_3);
+		
+		JTextArea textArea_4 = new JTextArea();
+		textArea_4.setForeground(Color.PINK);
+		textArea_4.setBackground(new Color(155, 45, 45, 30));
+		textArea_4.setBounds(0, 428, 1080, 60);
+		contentPane.add(textArea_4);
+		
 		
 		
 		
