@@ -236,10 +236,10 @@ public class KronoxGUI extends JFrame {
 		
 		time2 = new JLabel("08:15-12:00");
 		time2.setForeground(Color.BLACK);
-		time2.setFont(new Font("Futura", Font.PLAIN, 14));
+		time2.setFont(new Font("Futura", Font.PLAIN, 25));
 		time2.setBackground(Color.BLACK);
 		//time2.setBounds(6, 227, 85, 49);
-		time2.setBounds(30, 454, 85, 49);
+		time2.setBounds(30, 380, 156, 70);
 		contentPane.add(time2);
 		
 		time3 = new JLabel("08:15-12:00");
@@ -493,7 +493,6 @@ public class KronoxGUI extends JFrame {
 		
 
 		
-<<<<<<< Updated upstream
 		
 	//TEST PARSER
 	//PAR = parser.ParserKurs();
@@ -506,19 +505,7 @@ public class KronoxGUI extends JFrame {
 			//testKurs.add(PAR);
 		
 		
-		JTextArea moment3 = new JTextArea();
-		moment3.setText("Seminarium halva klassen:\nmiljöledning i transportföretag");
-		moment3.setFont(new Font("Futura", Font.PLAIN, 10));
-		moment3.setBackground(new Color(255, 228, 225));
-		//moment3.setBounds(388, 285, 120, 34);
-		moment3.setBounds(776, 570, 120, 34);
-		contentPane.add(moment3);
-<<<<<<< Updated upstream
-		}
-=======
 
-		
-		
 
 		//test.superDone.add()
 			
@@ -531,12 +518,6 @@ public class KronoxGUI extends JFrame {
 		
 	
 		//txtrDatavetenskapOchApplikationsutveckling.setText(parser.ParserKurs(kurs));
-		
->>>>>>> Stashed changes
-		
-=======
-	
->>>>>>> Stashed changes
 		
 		
 		//RADER
@@ -551,19 +532,19 @@ public class KronoxGUI extends JFrame {
 		JTextArea textArea_2 = new JTextArea();
 		textArea_2.setForeground(Color.PINK);
 		textArea_2.setBackground(new Color(155, 45, 45, 30));
-		textArea_2.setBounds(0, 550, 1080, 44);
+		textArea_2.setBounds(0, 520, 1080, 70);
 		contentPane.add(textArea_2);
 		
 		JTextArea textArea_3 = new JTextArea();
 		textArea_3.setForeground(Color.PINK);
 		textArea_3.setBackground(new Color(155, 45, 45, 30));
-		textArea_3.setBounds(0, 661, 1080, 56);
+		textArea_3.setBounds(0, 660, 1080, 70);
 		contentPane.add(textArea_3);
 		
 		JTextArea textArea_4 = new JTextArea();
 		textArea_4.setForeground(Color.PINK);
 		textArea_4.setBackground(new Color(155, 45, 45, 30));
-		textArea_4.setBounds(0, 428, 1080, 60);
+		textArea_4.setBounds(0, 800, 1080, 70);
 		contentPane.add(textArea_4);
 		
 		
