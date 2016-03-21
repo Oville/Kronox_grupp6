@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 
 public class Parser {
 
@@ -21,9 +22,9 @@ public class Parser {
 		this.lokal = lokal;
 	}
 
-	public String ParserKurs(){
+	public ArrayList<Parser> ParserKurs(){
 		this.kurs = kurs;
-		return kurs;
+		return null;
 	}
 	
 	
@@ -35,7 +36,7 @@ public class Parser {
 	
 
 	public String toString(){
-		String string =  startTime + "-" + endTime + " " + lokal + " "  + kurs + " "+ moment + "\n";
+		String string =  startTime + "-" + endTime + " " + lokal + " "  + kurs + " "+ "MOMENT: " + moment + "\n";
 		return string;
 	}
 

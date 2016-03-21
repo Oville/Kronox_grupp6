@@ -25,6 +25,25 @@ public class KronoxGUI extends JFrame {
 	private JPanel contentPane;
 	private JLabel labelTime;
 	private JLabel labelDate;
+	private JLabel lblProgramcourse;
+	private JLabel lblRoom;
+	private JLabel lblStartEnd;
+	private JLabel lblInfo;
+	private JTextArea textArea;
+	private JLabel lblNiagara;
+	private JLabel lblSchedule;
+	private JLabel lblNewLabel_1;
+	private JLabel room2;
+	private JLabel moment2;
+	private JLabel time1;
+	private JLabel time2;
+	private JLabel time3;
+	private JLabel time4;
+	private JLabel time5;
+	private JLabel time6;
+	private JLabel time7;
+	private JLabel time8;
+	private JTextArea room7;
 	private ClockKronox clockKronox;
 	private Parser parser;
 	private Test test;
@@ -70,8 +89,6 @@ public class KronoxGUI extends JFrame {
 
 	
 	public KronoxGUI() {
-	
-			
 			
 	
 		/**
@@ -112,52 +129,82 @@ public class KronoxGUI extends JFrame {
 		
 		//RUBRIKER
 		
+<<<<<<< Updated upstream
 		JLabel lblProgramcourse = new JLabel("PROGRAM/COURSE");
 		lblProgramcourse.setFont(new Font("Futura", Font.PLAIN, 23));
+=======
+		lblProgramcourse = new JLabel("PROGRAM/COURSE");
+		lblProgramcourse.setFont(new Font("Futura", Font.PLAIN, 14));
+>>>>>>> Stashed changes
 		lblProgramcourse.setForeground(Color.WHITE);
 		lblProgramcourse.setBackground(Color.BLACK);
 		//lblProgramcourse.setBounds(130, 129, 165, 49);
 		lblProgramcourse.setBounds(260, 255, 249, 49);
 		contentPane.add(lblProgramcourse);
 		
+<<<<<<< Updated upstream
 		JLabel lblRoom = new JLabel("ROOM");
 		lblRoom.setFont(new Font("Futura", Font.PLAIN, 23));
+=======
+		lblRoom = new JLabel("ROOM");
+		lblRoom.setFont(new Font("Futura", Font.PLAIN, 14));
+>>>>>>> Stashed changes
 		lblRoom.setForeground(Color.WHITE);
 		lblRoom.setBackground(Color.BLACK);
 		//lblRoom.setBounds(315, 129, 61, 49);
 		lblRoom.setBounds(630, 255, 187, 49);
 		contentPane.add(lblRoom);
 		
+<<<<<<< Updated upstream
 		JLabel lblStartEnd = new JLabel("START/END");
 		lblStartEnd.setFont(new Font("Futura", Font.PLAIN, 23));
+=======
+		lblStartEnd = new JLabel("START/END");
+		lblStartEnd.setFont(new Font("Futura", Font.PLAIN, 14));
+>>>>>>> Stashed changes
 		lblStartEnd.setForeground(Color.WHITE);
 		lblStartEnd.setBackground(Color.BLACK);
 		//lblStartEnd.setBounds(6, 129, 85, 49);
 		lblStartEnd.setBounds(30, 255, 156, 49);
 		contentPane.add(lblStartEnd);
 		
+<<<<<<< Updated upstream
 		JLabel lblInfo = new JLabel("INFO");
 		lblInfo.setFont(new Font("Futura", Font.PLAIN, 23));
+=======
+		lblInfo = new JLabel("INFO");
+		lblInfo.setFont(new Font("Futura", Font.PLAIN, 14));
+>>>>>>> Stashed changes
 		lblInfo.setForeground(Color.WHITE);
 		lblInfo.setBackground(Color.BLACK);
 		//lblInfo.setBounds(435, 129, 55, 49);
 		lblInfo.setBounds(870, 255, 110, 49);
 		contentPane.add(lblInfo);
 		
-		JTextArea textArea = new JTextArea();
+		textArea = new JTextArea();
 		textArea.setBackground(Color.BLACK);
 		//textArea.setBounds(0, 126, 540, 49);
 		textArea.setBounds(0, 250, 1080, 60);
 		contentPane.add(textArea);
 		
+<<<<<<< Updated upstream
 		JLabel lblNiagara = new JLabel("NIAGARA");
 		lblNiagara.setFont(new Font("Futura", Font.PLAIN, 80));
+=======
+		lblNiagara = new JLabel("NIAGARA");
+		lblNiagara.setFont(new Font("Futura", Font.PLAIN, 50));
+>>>>>>> Stashed changes
 		//lblNiagara.setBounds(117, 6, 275, 60);
 		lblNiagara.setBounds(245, 12, 399, 79);
 		contentPane.add(lblNiagara);
 		
+<<<<<<< Updated upstream
 		JLabel lblSchedule = new JLabel("SCHEDULE");
 		lblSchedule.setFont(new Font("Futura", Font.PLAIN, 50));
+=======
+		lblSchedule = new JLabel("SCHEDULE");
+		lblSchedule.setFont(new Font("Futura", Font.PLAIN, 35));
+>>>>>>> Stashed changes
 		//lblSchedule.setBounds(130, 65, 207, 49);
 		lblSchedule.setBounds(245, 108, 274, 49);
 		contentPane.add(lblSchedule);
@@ -169,7 +216,7 @@ public class KronoxGUI extends JFrame {
 		contentPane.add(labelDate);
 		
 		//LOGGA
-		JLabel lblNewLabel_1 = new JLabel("New label");
+		lblNewLabel_1 = new JLabel("New label");
 		lblNewLabel_1.setIcon(new ImageIcon("/Users/johanneradford/Desktop/Malmö-en1-127x150.png"));
 		//lblNewLabel_1.setBounds(17, 6, 88, 110);
 		lblNewLabel_1.setBounds(34, 12, 88, 110);
@@ -178,14 +225,32 @@ public class KronoxGUI extends JFrame {
 =======
 		contentPane.add(lblNewLabel_1);
 		
+<<<<<<< Updated upstream
 >>>>>>> Stashed changes
 	
 		
 
+=======
+		room2 = new JLabel("C0E11");
+		room2.setForeground(Color.BLACK);
+		room2.setFont(new Font("Futura", Font.PLAIN, 13));
+		room2.setBackground(Color.BLACK);
+		//room2.setBounds(315, 227, 61, 49);
+		room2.setBounds(630, 454, 61, 49);
+		contentPane.add(room2);
+		
+		moment2 = new JLabel("Föreläsning: Fackverk I");
+		moment2.setForeground(Color.BLACK);
+		moment2.setFont(new Font("Futura", Font.PLAIN, 10));
+		moment2.setBackground(Color.BLACK);
+		//moment2.setBounds(394, 232, 146, 41);
+		moment2.setBounds(788, 464, 146, 41);
+		contentPane.add(moment2);
+>>>>>>> Stashed changes
 		
 		
 		//TIDER
-		JLabel time1 = new JLabel("08:15-12:00");
+		time1 = new JLabel("08:15-12:00");
 		time1.setForeground(Color.BLACK);
 		time1.setFont(new Font("Futura", Font.PLAIN, 25));
 		time1.setBackground(Color.BLACK);
@@ -193,7 +258,7 @@ public class KronoxGUI extends JFrame {
 		time1.setBounds(28, 310, 177, 70);
 		contentPane.add(time1);
 		
-		JLabel time2 = new JLabel("08:15-12:00");
+		time2 = new JLabel("08:15-12:00");
 		time2.setForeground(Color.BLACK);
 		time2.setFont(new Font("Futura", Font.PLAIN, 14));
 		time2.setBackground(Color.BLACK);
@@ -201,7 +266,7 @@ public class KronoxGUI extends JFrame {
 		time2.setBounds(30, 454, 85, 49);
 		contentPane.add(time2);
 		
-		JLabel time3 = new JLabel("08:15-12:00");
+		time3 = new JLabel("08:15-12:00");
 		time3.setForeground(Color.BLACK);
 		time3.setFont(new Font("Futura", Font.PLAIN, 14));
 		time3.setBackground(Color.BLACK);
@@ -209,7 +274,7 @@ public class KronoxGUI extends JFrame {
 		time3.setBounds(30, 562, 85, 49);
 		contentPane.add(time3);
 		
-		JLabel time4 = new JLabel("08:15-12:00");
+		time4 = new JLabel("08:15-12:00");
 		time4.setForeground(Color.BLACK);
 		time4.setFont(new Font("Futura", Font.PLAIN, 14));
 		time4.setBackground(Color.BLACK);
@@ -217,7 +282,7 @@ public class KronoxGUI extends JFrame {
 		time4.setBounds(30, 656, 85, 49);
 		contentPane.add(time4);
 		
-		JLabel time5 = new JLabel("08:15-12:00");
+		time5 = new JLabel("08:15-12:00");
 		time5.setForeground(Color.BLACK);
 		time5.setFont(new Font("Futura", Font.PLAIN, 14));
 		time5.setBackground(Color.BLACK);
@@ -225,7 +290,7 @@ public class KronoxGUI extends JFrame {
 		time5.setBounds(30, 778, 85, 49);
 		contentPane.add(time5);
 		
-		JLabel time6 = new JLabel("08:15-12:00");
+		time6 = new JLabel("08:15-12:00");
 		time6.setForeground(Color.BLACK);
 		time6.setFont(new Font("Futura", Font.PLAIN, 14));
 		time6.setBackground(Color.BLACK);
@@ -233,7 +298,7 @@ public class KronoxGUI extends JFrame {
 		time6.setBounds(12, 900, 85, 49);
 		contentPane.add(time6);
 		
-		JLabel time7 = new JLabel("08:15-12:00");
+		time7 = new JLabel("08:15-12:00");
 		time7.setForeground(Color.BLACK);
 		time7.setFont(new Font("Futura", Font.PLAIN, 14));
 		time7.setBackground(Color.BLACK);
@@ -241,7 +306,7 @@ public class KronoxGUI extends JFrame {
 		time7.setBounds(12, 1022, 85, 41);
 		contentPane.add(time7);
 		
-		JLabel time8 = new JLabel("08:15-12:00");
+		time8 = new JLabel("08:15-12:00");
 		time8.setForeground(Color.BLACK);
 		time8.setFont(new Font("Futura", Font.PLAIN, 14));
 		time8.setBackground(Color.BLACK);
@@ -455,13 +520,13 @@ public class KronoxGUI extends JFrame {
 <<<<<<< Updated upstream
 		
 	//TEST PARSER
-		PAR = parser.ParserKurs();
+	//PAR = parser.ParserKurs();
 		
-		for(int i = 0; i < PAR.size(); i ++){
+	//	for(int i = 0; i < PAR.size(); i ++){
 		
-			JLabel testKurs = new JLabel((Icon) PAR.get(i));
-			testKurs.setBounds(134, 77, 187, 115);
-			contentPane.add(PAR);
+		//	JLabel testKurs = new JLabel((Icon) PAR.get(i));
+			//testKurs.setBounds(134, 77, 187, 115);
+		//	contentPane.add(PAR);
 			//testKurs.add(PAR);
 		
 		
@@ -472,6 +537,7 @@ public class KronoxGUI extends JFrame {
 		//moment3.setBounds(388, 285, 120, 34);
 		moment3.setBounds(776, 570, 120, 34);
 		contentPane.add(moment3);
+<<<<<<< Updated upstream
 		}
 =======
 
@@ -492,6 +558,9 @@ public class KronoxGUI extends JFrame {
 		
 >>>>>>> Stashed changes
 		
+=======
+	
+>>>>>>> Stashed changes
 		
 		
 		//RADER
@@ -523,11 +592,9 @@ public class KronoxGUI extends JFrame {
 		
 		
 		
-		
-				
 		clockKronox = new ClockKronox(this);
 		
-		PAR = parser.ParserKurs();
+	/**	PAR = parser.ParserKurs();
 		
 		
 		class getScheduleFromKronox extends Thread{
@@ -537,6 +604,6 @@ public class KronoxGUI extends JFrame {
 			}
 			
 		}
-		
+		*/
 	}
 }

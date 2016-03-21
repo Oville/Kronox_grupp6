@@ -19,7 +19,6 @@ public class Test {
 		
 		ArrayList<String> time = new ArrayList<String>();
 		
-		
 		ArrayList<Parser> superDone = new ArrayList<Parser>();
 		
 		String room = null;
@@ -53,18 +52,14 @@ public class Test {
 		        			int startPos = rawString.indexOf("<b>");
 		        			int slutPos = rawString.indexOf("</b>");
 		        			rawString = rawString.trim();
-		        			if(startPos > 0 && slutPos > 0){
+		        			//if(startPos > 0 && slutPos > 0){
 		        			info = rawString.substring(startPos + 3 , slutPos);
-		        			info = info.replaceAll("&#228;", "ä");
-		        			info = info.replaceAll("&#246;", "ö");
+		        			info = info.replaceAll("&#228;", "ö");
+		        			//info = info.replaceAll("&#246;", "ö");
 		        			}else{
 		        				info = eElement.getTextContent();
 		        			}
-		        			
-		        			
-		                }
-		        		
-		        			
+		    			
 		                }
 		            }
 			
@@ -135,7 +130,7 @@ public class Test {
 			
 			
 			
-			System.out.println(superDone.get(h).toString());
+		System.out.println(superDone.get(h).toString());
 			
             
 			
